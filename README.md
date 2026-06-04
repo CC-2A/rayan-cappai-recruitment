@@ -21,17 +21,19 @@ A standalone static recruitment website for Rayan Cappai, a 2006-born French cen
 9. References
 10. Contact section
 
-## Placeholder Links to Replace
+## Verified Links and Contact Details
 
-Update these placeholder URLs in `index.html` before sending to coaches:
+These verified resources are used in `index.html` for coach-ready sharing:
 
-- Highlight video: `https://example.com/highlight-video`
-- Full-game footage: `https://example.com/full-game-footage`
-- Soccer CV PDF: `https://example.com/soccer-cv.pdf`
-- Academic transcript: `https://example.com/academic-transcript`
-- References: `https://example.com/references`
-- Email: `recruiting@example.com`
-- Phone: `+10000000000`
+- Highlight Video / Updated Player Profile: `https://drive.google.com/file/d/1FALpcjSMcFmRPJZNPi_XGeGoIGmxrED_/view?usp=drivesdk`
+- Full Match 1 (#6): `https://www.youtube.com/live/TAvvrUMQAZk?si=9LWjtwi2vpR2S3uH`
+- Full Match 2 (#10): `https://www.youtube.com/live/RGb3gW8t4zk?si=LaNwfNcvGyfp-gCt`
+- Photo Gallery: `https://photos.app.goo.gl/yR7VzU5CNVzvRMh3A`
+- Website / Player Profile: `https://cc-2a.github.io/rayan-cappai-recruitment/`
+- Email: `raykil132a@gmail.com`
+- WhatsApp: `https://wa.me/33611530454`
+
+Soccer CV PDF, academic transcript, and references are listed as available upon request.
 
 ## Local Preview
 
@@ -45,4 +47,4 @@ Then visit `http://localhost:8000`.
 
 ## Editing Notes
 
-This site intentionally avoids fake stats and invented achievements. Keep recruitment details factual and replace placeholders only with verified links and contact information.
+This site intentionally avoids fake stats and invented achievements. Keep recruitment details factual and use only verified links and contact information.

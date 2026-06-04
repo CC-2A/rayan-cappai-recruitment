@@ -245,6 +245,10 @@ h3 {
   margin-top: 1.5rem;
 }
 
+.contact-actions {
+  flex-wrap: wrap;
+}
+
 .btn {
   display: inline-flex;
   min-height: 48px;
@@ -273,6 +277,18 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.18);
   background: rgba(255, 255, 255, 0.05);
   color: var(--text);
+}
+
+.btn-unavailable {
+  border: 1px solid rgba(57, 255, 136, 0.3);
+  background: rgba(57, 255, 136, 0.08);
+  color: var(--accent);
+  cursor: default;
+}
+
+.btn-unavailable:hover,
+.btn-unavailable:focus-visible {
+  transform: none;
 }
 
 .hero-card,
@@ -407,6 +423,15 @@ dd {
   font-weight: 900;
 }
 
+.resource-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-card .btn {
+  margin-top: auto;
+}
+
 .video-placeholder {
   display: grid;
   width: 100%;
@@ -445,6 +470,10 @@ dd {
   color: var(--accent);
   font-weight: 900;
   text-underline-offset: 0.25em;
+}
+
+.text-status {
+  display: inline-block;
 }
 
 .contact-section {
@@ -498,6 +527,10 @@ dd {
   .contact-actions,
   .footer-inner {
     flex-direction: row;
+  }
+
+  .contact-actions .btn {
+    flex: 1 1 190px;
   }
 
   .snapshot-grid {
@@ -554,7 +587,8 @@ dd {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .fit-grid {
+  .fit-grid,
+  .resources-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
