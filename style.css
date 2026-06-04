@@ -432,6 +432,52 @@ dd {
   margin-top: auto;
 }
 
+
+.cv-summary-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.85rem 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.cv-summary-list li {
+  color: var(--muted);
+}
+
+.cv-summary-list strong {
+  color: var(--text);
+}
+
+.resource-note {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--text) !important;
+  font-weight: 800;
+}
+
+.player-cv-card {
+  border-color: rgba(57, 255, 136, 0.3);
+  background:
+    radial-gradient(circle at top right, rgba(57, 255, 136, 0.14), transparent 34%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.035));
+}
+
+.document-card,
+.compact-request-panel {
+  min-height: auto;
+}
+
+.document-card .eyebrow,
+.player-cv-card .eyebrow {
+  margin-bottom: 0.35rem;
+}
+
+.compact-request-panel .btn {
+  margin-top: 0.7rem;
+}
+
 .video-placeholder {
   display: grid;
   width: 100%;
@@ -590,6 +636,10 @@ dd {
   .fit-grid,
   .resources-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .player-cv-card {
+    grid-column: span 2;
   }
 
   .reverse-mobile > :first-child {
