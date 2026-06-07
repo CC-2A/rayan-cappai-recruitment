@@ -3,8 +3,18 @@ const navToggle = document.querySelector('[data-nav-toggle]');
 const navMenu = document.querySelector('[data-nav-menu]');
 const year = document.querySelector('[data-year]');
 
+let scrollTicking = false;
+
 const setHeaderState = () => {
   header?.classList.toggle('is-scrolled', window.scrollY > 12);
+  scrollTicking = false;
+};
+
+const requestHeaderState = () => {
+  if (!scrollTicking) {
+    window.requestAnimationFrame(setHeaderState);
+    scrollTicking = true;
+  }
 };
 
 const closeMenu = () => {
@@ -25,12 +35,15 @@ navMenu?.addEventListener('click', (event) => {
   }
 });
 
-window.addEventListener('scroll', setHeaderState, { passive: true });
+window.addEventListener('scroll', requestHeaderState, { passive: true });
 window.addEventListener('resize', () => {
   if (window.innerWidth >= 860) {
     closeMenu();
   }
 });
 
-year.textContent = new Date().getFullYear();
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
+
 setHeaderState();

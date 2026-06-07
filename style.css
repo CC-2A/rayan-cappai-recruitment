@@ -996,3 +996,186 @@ dd {
   grid-column: 1 / -1;
   margin-bottom: 0;
 }
+
+/* Performance and conversion refinements */
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.coach-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  max-width: 760px;
+}
+
+.coach-actions .btn {
+  min-height: 54px;
+}
+
+.coach-actions .btn-primary {
+  box-shadow: 0 14px 34px rgba(37, 216, 120, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.68);
+}
+
+.video-card .btn-primary {
+  border-color: rgba(232, 255, 239, 0.34);
+  background: linear-gradient(135deg, #d9ffe7, var(--accent) 52%, var(--accent-strong));
+  color: #021006;
+}
+
+.video-card .btn-primary:hover,
+.video-card .btn-primary:focus-visible {
+  background: linear-gradient(135deg, #effff4, #79f7aa 52%, var(--accent-strong));
+  color: #021006;
+}
+
+@media (min-width: 640px) {
+  .coach-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .coach-actions .btn-primary,
+  .coach-actions .btn[href="#contact"] {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 960px) {
+  .coach-actions {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .coach-actions .btn-primary,
+  .coach-actions .btn[href="#contact"] {
+    grid-column: auto;
+  }
+}
+
+@media (hover: none) {
+  .stat-card:hover,
+  .video-card:hover,
+  .info-panel:hover,
+  .profile-card:hover,
+  .fit-grid article:hover,
+  .action-photo-card:hover,
+  .btn:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 639px) {
+  body {
+    background-attachment: scroll;
+    background:
+      linear-gradient(180deg, rgba(5, 20, 17, 0.98), rgba(8, 39, 28, 0.98) 72%, rgba(5, 19, 16, 0.99)),
+      repeating-linear-gradient(90deg, #0d2f20 0 18vw, #123d28 18vw 36vw);
+  }
+
+  body::before {
+    position: absolute;
+    opacity: 0.38;
+    background:
+      linear-gradient(90deg, transparent 49.9%, rgba(238, 255, 238, 0.055) 49.98% 50.02%, transparent 50.1%),
+      repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 18vw);
+  }
+
+  body::after {
+    display: none;
+  }
+
+  .site-header,
+  .hero-content .eyebrow,
+  .hero-card,
+  .info-panel,
+  .profile-card,
+  .video-card,
+  .fit-grid article,
+  .stat-card,
+  .contact-card {
+    backdrop-filter: none;
+  }
+
+  .site-header,
+  .site-header.is-scrolled {
+    background: rgba(3, 16, 14, 0.98);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .hero {
+    padding: 3.4rem 0 2.7rem;
+  }
+
+  .hero-bg {
+    background:
+      linear-gradient(180deg, rgba(2, 10, 10, 0.28), rgba(3, 14, 12, 0.74)),
+      radial-gradient(ellipse at 50% 86%, rgba(98, 242, 154, 0.12), transparent 35%),
+      linear-gradient(180deg, rgba(19, 58, 48, 0.88) 0%, rgba(18, 74, 45, 0.8) 48%, rgba(7, 38, 28, 0.96) 100%);
+  }
+
+  .hero-bg::before {
+    background:
+      linear-gradient(90deg, transparent 49.72%, rgba(245, 255, 245, 0.12) 49.88% 50.12%, transparent 50.28%),
+      repeating-linear-gradient(90deg, rgba(226, 255, 224, 0.05) 0 1px, transparent 1px 12%);
+  }
+
+  .hero-bg::after,
+  .video-card::after,
+  .hero-card::after {
+    display: none;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 18vw, 4.9rem);
+    line-height: 0.9;
+    text-shadow: 0 10px 28px rgba(0, 0, 0, 0.34);
+  }
+
+  h2 {
+    font-size: clamp(1.85rem, 10vw, 2.75rem);
+    line-height: 1.02;
+  }
+
+  .section {
+    padding: 3.25rem 0;
+  }
+
+  .hero-card,
+  .info-panel,
+  .profile-card,
+  .video-card,
+  .fit-grid article,
+  .stat-card,
+  .action-photo-card,
+  .timeline-item,
+  .cv-preview {
+    box-shadow: 0 12px 28px rgba(0, 8, 18, 0.24);
+  }
+
+  .video-placeholder {
+    min-height: 150px;
+    box-shadow: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .btn:hover,
+  .btn:focus-visible,
+  .stat-card:hover,
+  .video-card:hover,
+  .info-panel:hover,
+  .profile-card:hover,
+  .fit-grid article:hover,
+  .action-photo-card:hover {
+    transform: none;
+  }
+}
