@@ -232,7 +232,7 @@ a {
 .hero-bg::before {
   position: absolute;
   inset: -4%;
-  background-image: url("IMG-20260521-WA0008.jpg");
+  background-image: url("IMG-20260521-WA0005.jpg");
   background-position: 58% center;
   background-size: cover;
   filter: saturate(1.06) contrast(1.05) brightness(1.08);
@@ -1228,7 +1228,7 @@ dd {
   }
 
   .hero-bg::before {
-    background-image: url("IMG-20260521-WA0008.jpg");
+    background-image: url("IMG-20260521-WA0005.jpg");
     background-position: 62% top;
     background-size: cover;
     filter: saturate(1.1) contrast(1.04) brightness(1.16);
@@ -1636,7 +1636,7 @@ h1 {
 /* Hero refresh: pair the atmospheric background with a visible action image card. */
 .hero-bg::before {
   inset: -2%;
-  background-image: url("IMG-20260521-WA0008.jpg?v=20260608-1020");
+  background-image: url("IMG-20260521-WA0005.jpg?v=20260608-1020");
   background-position: 60% 42%;
   filter: saturate(1.14) contrast(1.03) brightness(1.18);
   transform: scale(1.01) translate3d(0, 0, 0);
@@ -1737,7 +1737,7 @@ h1 {
   }
 
   .hero-bg::before {
-    background-image: url("IMG-20260521-WA0008.jpg?v=20260608-1020");
+    background-image: url("IMG-20260521-WA0005.jpg?v=20260608-1020");
     background-position: 58% top;
     filter: saturate(1.16) contrast(1.02) brightness(1.22);
     transform: scale(1.01);
