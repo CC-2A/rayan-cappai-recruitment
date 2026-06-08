@@ -233,9 +233,9 @@ a {
   position: absolute;
   inset: -4%;
   background-image: url("IMG-20260521-WA0008.jpg");
-  background-position: 58% center;
+  background-position: 62% center;
   background-size: cover;
-  filter: saturate(1.06) contrast(1.05) brightness(1.08);
+  filter: saturate(1.08) contrast(1.04) brightness(1.12);
   transform: scale(1.02) translate3d(0, 0, 0);
   transform-origin: center;
   animation: heroKenBurns 32s ease-in-out infinite alternate;
