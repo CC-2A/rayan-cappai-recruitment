@@ -218,7 +218,7 @@ a {
   inset: auto 0 0;
   height: 34%;
   pointer-events: none;
-  background: linear-gradient(180deg, transparent, rgba(2, 6, 12, 0.88));
+  background: linear-gradient(180deg, transparent, rgba(2, 6, 12, 0.68));
   content: "";
 }
 
@@ -233,9 +233,9 @@ a {
   position: absolute;
   inset: -4%;
   background-image: url("IMG-20260521-WA0008.jpg");
-  background-position: center;
+  background-position: 58% center;
   background-size: cover;
-  filter: saturate(0.96) contrast(1.08) brightness(0.86);
+  filter: saturate(1.06) contrast(1.05) brightness(1.08);
   transform: scale(1.02) translate3d(0, 0, 0);
   transform-origin: center;
   animation: heroKenBurns 32s ease-in-out infinite alternate;
@@ -247,10 +247,10 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(2, 8, 18, 0.92) 0%, rgba(3, 12, 26, 0.82) 36%, rgba(3, 12, 26, 0.52) 64%, rgba(2, 8, 18, 0.78) 100%),
-    linear-gradient(180deg, rgba(2, 8, 18, 0.62) 0%, rgba(2, 8, 18, 0.28) 42%, rgba(2, 8, 18, 0.9) 100%),
-    radial-gradient(circle at 18% 20%, rgba(216, 183, 101, 0.18), transparent 28rem),
-    radial-gradient(circle at 78% 12%, rgba(57, 200, 255, 0.15), transparent 26rem);
+    linear-gradient(90deg, rgba(2, 8, 18, 0.86) 0%, rgba(3, 12, 26, 0.66) 34%, rgba(3, 12, 26, 0.24) 64%, rgba(2, 8, 18, 0.42) 100%),
+    linear-gradient(180deg, rgba(2, 8, 18, 0.36) 0%, rgba(2, 8, 18, 0.12) 44%, rgba(2, 8, 18, 0.72) 100%),
+    radial-gradient(circle at 18% 20%, rgba(216, 183, 101, 0.12), transparent 28rem),
+    radial-gradient(circle at 78% 12%, rgba(57, 200, 255, 0.1), transparent 26rem);
   content: "";
 }
 
@@ -963,7 +963,8 @@ dd {
   }
 
   .hero-bg::before {
-    opacity: 0.62;
+    background-position: 60% top;
+    filter: saturate(1.08) contrast(1.04) brightness(1.12);
   }
 
   .hero-card,
@@ -1124,12 +1125,20 @@ dd {
   }
 
   .hero-bg::before {
-    background:
-      linear-gradient(90deg, transparent 49.72%, rgba(245, 255, 245, 0.12) 49.88% 50.12%, transparent 50.28%),
-      repeating-linear-gradient(90deg, rgba(226, 255, 224, 0.05) 0 1px, transparent 1px 12%);
+    background-image: url("IMG-20260521-WA0008.jpg");
+    background-position: 62% top;
+    background-size: cover;
+    filter: saturate(1.1) contrast(1.04) brightness(1.16);
+    opacity: 1;
   }
 
-  .hero-bg::after,
+  .hero-bg::after {
+    display: block;
+    background:
+      linear-gradient(90deg, rgba(2, 8, 18, 0.78) 0%, rgba(2, 8, 18, 0.5) 48%, rgba(2, 8, 18, 0.18) 72%, rgba(2, 8, 18, 0.38) 100%),
+      linear-gradient(180deg, rgba(2, 8, 18, 0.26) 0%, rgba(2, 8, 18, 0.04) 42%, rgba(2, 8, 18, 0.68) 100%);
+  }
+
   .video-card::after,
   .hero-card::after {
     display: none;
@@ -1489,7 +1498,7 @@ h1 {
   }
 
   .hero-bg::before {
-    background-position: center;
+    background-position: 62% top;
   }
 
   .hero-badges span {
