@@ -1778,3 +1778,56 @@ h1 {
     transform: scale(1.01);
   }
 }
+
+/* Final hero background framing: keep the player photo subtle, stable, and behind the content. */
+.hero-bg::before {
+  inset: 0;
+  background-image: url("IMG-20260521-WA0007.jpg?v=20260608-hero-bg");
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.9;
+  filter: saturate(1.04) contrast(1.02) brightness(1.02);
+  transform: none;
+  animation: none;
+  will-change: auto;
+}
+
+.hero-bg::after {
+  background:
+    linear-gradient(90deg, rgba(2, 8, 18, 0.78) 0%, rgba(2, 8, 18, 0.56) 34%, rgba(2, 8, 18, 0.24) 68%, rgba(2, 8, 18, 0.18) 100%),
+    linear-gradient(180deg, rgba(2, 8, 18, 0.18) 0%, rgba(2, 8, 18, 0.08) 48%, rgba(2, 8, 18, 0.42) 100%);
+}
+
+.hero-visual-stack {
+  align-content: end;
+}
+
+.hero-player-card {
+  display: none;
+}
+
+@media (max-width: 639px) {
+  .hero-bg::before {
+    inset: 0;
+    background-image: url("IMG-20260521-WA0007.jpg?v=20260608-hero-bg");
+    background-position: center top;
+    background-size: cover;
+    opacity: 0.82;
+    filter: saturate(1.02) contrast(1.01) brightness(1.03);
+    transform: none;
+    animation: none;
+  }
+
+  .hero-bg::after {
+    background:
+      linear-gradient(90deg, rgba(2, 8, 18, 0.76) 0%, rgba(2, 8, 18, 0.52) 46%, rgba(2, 8, 18, 0.26) 100%),
+      linear-gradient(180deg, rgba(2, 8, 18, 0.2) 0%, rgba(2, 8, 18, 0.08) 42%, rgba(2, 8, 18, 0.48) 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg::before {
+    transform: none;
+    animation: none;
+  }
+}
