@@ -147,6 +147,56 @@ a {
   box-shadow: 0 0 26px rgba(214, 185, 107, 0.18);
 }
 
+
+.nav-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.language-selector {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.18rem;
+  padding: 0.22rem;
+  border: 1px solid rgba(214, 185, 107, 0.34);
+  border-radius: 999px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.025)),
+    rgba(5, 22, 20, 0.82);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 14px 34px rgba(0, 0, 0, 0.18);
+}
+
+.language-option {
+  min-width: 2.35rem;
+  min-height: 2.15rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  transition: color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.language-option:hover,
+.language-option:focus-visible {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.language-option.is-active {
+  background: linear-gradient(135deg, #f7efd5, var(--gold));
+  color: #061611;
+  box-shadow: 0 8px 22px rgba(216, 183, 101, 0.22);
+}
+
+.language-option:active {
+  transform: translateY(1px);
+}
+
 .nav-toggle {
   display: inline-flex;
   flex-direction: column;
@@ -826,6 +876,17 @@ dd {
   border: 0;
 }
 
+@media (max-width: 420px) {
+  .brand-text {
+    display: none;
+  }
+
+  .language-option {
+    min-width: 2.05rem;
+    padding-inline: 0.35rem;
+  }
+}
+
 @media (min-width: 640px) {
   .hero-actions,
   .contact-actions,
@@ -849,16 +910,26 @@ dd {
 }
 
 @media (min-width: 860px) {
+  .brand {
+    flex: 0 0 auto;
+  }
+
+  .nav-controls {
+    order: 3;
+  }
+
   .nav-toggle {
     display: none;
   }
 
   .nav-menu {
     position: static;
+    order: 2;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.1rem;
+    margin-left: auto;
     padding: 0;
     border: 0;
     background: transparent;
@@ -1142,6 +1213,17 @@ dd {
 .video-card .btn-primary:focus-visible {
   background: linear-gradient(135deg, #effff4, #79f7aa 52%, var(--accent-strong));
   color: #021006;
+}
+
+@media (max-width: 420px) {
+  .brand-text {
+    display: none;
+  }
+
+  .language-option {
+    min-width: 2.05rem;
+    padding-inline: 0.35rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1563,6 +1645,17 @@ h1 {
   top: -88px;
   display: block;
   visibility: hidden;
+}
+
+@media (max-width: 420px) {
+  .brand-text {
+    display: none;
+  }
+
+  .language-option {
+    min-width: 2.05rem;
+    padding-inline: 0.35rem;
+  }
 }
 
 @media (min-width: 640px) {
