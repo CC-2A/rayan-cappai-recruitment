@@ -29,7 +29,7 @@ These verified resources are used in `index.html` for coach-ready sharing:
 - Highlight Video / Updated Player Profile: `https://drive.google.com/file/d/1FALpcjSMcFmRPJZNPi_XGeGoIGmxrED_/view?usp=drivesdk`
 - Full Match 1 (#6): `https://www.youtube.com/live/TAvvrUMQAZk?si=9LWjtwi2vpR2S3uH`
 - Full Match 2 (#10): `https://www.youtube.com/live/RGb3gW8t4zk?si=LaNwfNcvGyfp-gCt`
-- Soccer CV PDF: `rayan-cappai-sport-cv.pdf`
+- Soccer CV PDFs: `Rayan_Cappai_Sport_CV_EN.pdf`, `Rayan_Cappai_CV_Sportif_FR.pdf`, `Rayan_Cappai_CV_Deportivo_ES.pdf`
 - Action Photos: uploaded match photos in this repository
 - Website / Player Profile: `https://cc-2a.github.io/rayan-cappai-recruitment/`
 - Email: `raykil132a@gmail.com`
