@@ -822,6 +822,19 @@ dd {
   margin-top: 0.7rem;
 }
 
+.compact-documents-note {
+  max-width: 820px;
+}
+
+.compact-documents-note p {
+  max-width: 640px;
+  color: var(--muted);
+}
+
+.compact-documents-note .btn {
+  margin-top: 0.7rem;
+}
+
 .video-badge {
   display: grid;
   width: 100%;
