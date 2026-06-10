@@ -1595,15 +1595,6 @@ h1 {
   box-shadow: 0 0 0 6px rgba(57, 200, 255, 0.16);
 }
 
-.eval-section {
-  background:
-    radial-gradient(circle at 80% 0%, rgba(57, 200, 255, 0.08), transparent 24rem),
-    linear-gradient(180deg, rgba(3, 9, 18, 0.9), rgba(7, 18, 31, 0.84));
-}
-
-.evaluation-panel {
-  border-color: rgba(216, 183, 101, 0.28);
-}
 
 .coach-flow {
   display: grid;
