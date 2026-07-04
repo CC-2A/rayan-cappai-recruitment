@@ -6,7 +6,6 @@ const languageButtons = document.querySelectorAll('[data-lang-option]');
 const languageStorageKey = 'rayan-cappai-language';
 const supportedLanguages = ['en', 'fr', 'es'];
 const defaultLanguage = 'en';
-const teamOfWeekImage = 'rayan-cappai-team-northeast-conference.jpg?v=20260704-real';
 
 const translations = {
   fr: {
@@ -103,12 +102,15 @@ const insertRecognitionSection = () => {
           <h2 id="recognition-title">Northeast Conference Team of the Week</h2>
           <p>Selected in the Northeast Conference Team of the Week for June 26 - July 2, 2026 with First State FC.</p>
         </div>
-        <article class="profile-card" aria-label="Northeast Conference Team of the Week recognition card" style="overflow:hidden; padding:0;">
-          <img src="${teamOfWeekImage}" alt="Northeast Conference Team of the Week official visual showing Rayan Cappai with First State FC" loading="lazy" decoding="async" style="display:block; width:100%; height:auto; border-radius:24px;" />
-          <div style="padding:1rem 1.1rem 1.2rem;">
-            <p class="eyebrow">Official Team of the Week visual</p>
-            <p style="margin:0; color:var(--muted);">First State FC · Northeast Conference · June 26 - July 2, 2026</p>
-          </div>
+
+        <article class="profile-card" aria-label="Northeast Conference Team of the Week official visual" style="overflow:hidden; padding:0;">
+          <img
+            src="rayan-cappai-team-northeast-conference.jpg?v=20260704-real-photo"
+            alt="Northeast Conference Team of the Week official visual showing Rayan Cappai with First State FC"
+            loading="lazy"
+            decoding="async"
+            style="display:block; width:100%; height:auto; border-radius:24px;"
+          />
         </article>
       </div>
     </section>
