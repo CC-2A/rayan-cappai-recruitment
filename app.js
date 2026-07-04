@@ -1,428 +1,58 @@
-const header = document.querySelector('[data-header]');
-const navToggle = document.querySelector('[data-nav-toggle]');
-const navMenu = document.querySelector('[data-nav-menu]');
-const year = document.querySelector('[data-year]');
-const languageButtons = document.querySelectorAll('[data-lang-option]');
-const languageStorageKey = 'rayan-cappai-language';
-const supportedLanguages = ['en', 'fr', 'es'];
-const defaultLanguage = 'en';
+const header=document.querySelector('[data-header]');
+const navToggle=document.querySelector('[data-nav-toggle]');
+const navMenu=document.querySelector('[data-nav-menu]');
+const year=document.querySelector('[data-year]');
+const buttons=document.querySelectorAll('[data-lang-option]');
+const key='rayan-cappai-language';
+const langs=['en','fr','es'];
 
-const translations = {
-  fr: {
-    text: {
-      'Skip to content': 'Aller au contenu',
-      'Open navigation': 'Ouvrir la navigation',
-      'Snapshot': 'Aperçu',
-      'Recognition': 'Distinction',
-      'Video': 'Vidéo',
-      'Profile': 'Profil',
-      'Sport CV': 'CV sportif',
-      'Action Photos': 'Photos en action',
-      'Recruiting Fit': 'Profil recherché',
-      'Contact': 'Contact',
-      'Club recruitment · Central midfielder · France + United States': 'Recrutement club · Milieu central · France + États-Unis',
-      'Rayan Cappai': 'Rayan Cappai',
-      '2006 French Central Midfielder | Club Trial / Evaluation': 'Milieu central français 2006 | Essai / évaluation club',
-      'U17 Nationaux / U19 Nationaux background in France, then U.S. experience with William Penn University and current U.S. Summer League with First State FC / Midnight Riders. Selected in the Northeast Conference Team of the Week for June 26 - July 2, 2026. Available for club trial and next-step evaluation, with 2026 highlights and full-match footage ready for staff review.': 'Parcours en U17 Nationaux / U19 Nationaux en France, puis expérience aux États-Unis avec William Penn University et actuellement en U.S. Summer League avec First State FC / Midnight Riders. Sélectionné dans l’équipe type de la semaine de la Northeast Conference du 26 juin au 2 juillet 2026. Disponible pour un essai ou une évaluation en club, avec highlights 2026 et match complet prêts pour l’analyse du staff.',
-      '2006-born': 'Né en 2006',
-      '1.82 m / 77 kg': '1,82 m / 77 kg',
-      'Right-footed': 'Droitier',
-      'Central Midfielder': 'Milieu central',
-      'Northeast Team of the Week': 'Équipe type Northeast',
-      'Highlights 2026 Rayan Cappai': 'Highlights 2026 Rayan Cappai',
-      'Latest Full Match — June 20, 2026 (#27)': 'Dernier match complet — 20 juin 2026 (#27)',
-      'Download CV — English': 'Télécharger CV — Anglais',
-      'Télécharger CV — Français': 'Télécharger CV — Français',
-      'Descargar CV — Español': 'Télécharger CV — Espagnol',
-      'Contact Rayan': 'Contacter Rayan',
-      'Club Review': 'Analyse club',
-      'Latest Full Match #27': 'Dernier match complet #27',
-      'Sport CV PDFs': 'PDF du CV sportif',
-      'Direct WhatsApp contact': 'Contact WhatsApp direct',
-      'Recruitment Snapshot': 'Aperçu recrutement',
-      'Key facts at a glance': 'Informations clés en un coup d’œil',
-      'Concise recruitment data for coaches, scouts, sporting directors, and club staff.': 'Données de recrutement concises pour coachs, recruteurs, directeurs sportifs et staffs de club.',
-      'Position': 'Poste',
-      'French Youth Level': 'Niveau jeunes France',
-      'Current Club': 'Club actuel',
-      'Current Level': 'Niveau actuel',
-      'Height / Weight': 'Taille / Poids',
-      'Foot': 'Pied',
-      'U.S. Experience': 'Expérience aux États-Unis',
-      'Availability': 'Disponibilité',
-      'Northeast Conference Team of the Week': 'Équipe type de la semaine — Northeast Conference',
-      'U.S. Summer League': 'U.S. Summer League',
-      'William Penn University + First State FC': 'William Penn University + First State FC',
-      'Club trial / evaluation': 'Essai / évaluation club',
-      'Recent Recognition': 'Distinction récente',
-      'Selected in the Northeast Conference Team of the Week for June 26 - July 2, 2026 with First State FC.': 'Sélectionné dans l’équipe type de la semaine de la Northeast Conference du 26 juin au 2 juillet 2026 avec First State FC.',
-      'Video Evaluation': 'Évaluation vidéo',
-      'Highlights 2026 + latest full-match reference': 'Highlights 2026 + dernier match complet de référence',
-      'Start with the 2026 highlights, then use the June 20, 2026 full match to evaluate decisions, positioning, tempo, and work rate. Rayan wears number 27.': 'Commencez par les highlights 2026, puis utilisez le match complet du 20 juin 2026 pour évaluer les décisions, le placement, le tempo et le volume de travail. Rayan porte le numéro 27.',
-      '2026': '2026',
-      'Fast review': 'Analyse rapide',
-      'Latest 2026 highlight reel for a fast first review of technical quality, movement, and ball security.': 'Compilation récente des highlights 2026 pour une première analyse rapide de la qualité technique, des déplacements et de la sécurité avec le ballon.',
-      'Latest full-match review': 'Dernière analyse en match complet',
-      'Latest Full Match — June 20, 2026': 'Dernier match complet — 20 juin 2026',
-      'Full-match reference from June 20, 2026. Rayan wears number 27.': 'Match complet de référence du 20 juin 2026. Rayan porte le numéro 27.',
-      'Watch Latest Full Match #27': 'Voir le dernier match complet #27',
-      'Best evaluated as a central midfielder: reliable in possession, useful between phases, and visible in current U.S. Summer League footage.': 'À évaluer comme milieu central : fiable en possession, utile entre les phases et visible sur des images actuelles de U.S. Summer League.',
-      'Coach-facing profile': 'Profil pour les coachs',
-      'Why review Rayan?': 'Pourquoi évaluer Rayan ?',
-      'U17 Nationaux / U19 Nationaux background in France before moving into U.S. environments.': 'Parcours en U17 Nationaux / U19 Nationaux en France avant d’intégrer des environnements aux États-Unis.',
-      'U.S. experience combines William Penn University and current U.S. Summer League competition with First State FC / Midnight Riders.': 'Son expérience aux États-Unis combine William Penn University et la compétition actuelle en U.S. Summer League avec First State FC / Midnight Riders.',
-      'Central midfielder profile: reliable in possession, connects play, and supports both sides of the ball.': 'Profil de milieu central : fiable en possession, connecte le jeu et travaille dans les deux phases.',
-      'Recent Northeast Conference Team of the Week selection adds a current performance marker.': 'Sa sélection récente dans l’équipe type de la Northeast Conference ajoute un repère de performance actuel.',
-      'Latest full-match video supports evaluation beyond highlights: scanning, tempo control, defensive work, and decisions under pressure.': 'La dernière vidéo de match complet permet une évaluation au-delà des highlights : prise d’information, gestion du tempo, travail défensif et décisions sous pression.',
-      'Download the Sport CV': 'Télécharger le CV sportif',
-      'Download the CV in the preferred language.': 'Téléchargez le CV dans la langue souhaitée.',
-      'PDF downloads': 'Téléchargements PDF',
-      'Current match photo set': 'Photos de match actuelles',
-      'Action photos remain available for visual context.': 'Les photos en action restent disponibles pour le contexte visuel.',
-      'Supporting Documents': 'Documents complémentaires',
-      'Additional documents': 'Documents additionnels',
-      'Sporting, academic, and reference documents are available by email request if needed by club staff.': 'Les documents sportifs, académiques et de référence sont disponibles sur demande par e-mail si le staff du club en a besoin.',
-      'Request Documents': 'Demander les documents',
-      'Recruiting fit': 'Profil recherché',
-      'Best-fit opportunities': 'Opportunités les plus adaptées',
-      'Clubs seeking a 2006 central midfielder with U17 Nationaux / U19 Nationaux background and current U.S. match footage.': 'Clubs recherchant un milieu central né en 2006, avec un parcours U17 Nationaux / U19 Nationaux et des images de match actuelles aux États-Unis.',
-      'Pre-professional and semi-professional environments that value midfield range, role flexibility, and full-match evaluation.': 'Environnements préprofessionnels et semi-professionnels qui valorisent le volume au milieu, l’adaptabilité et l’évaluation sur match complet.',
-      'Teams needing a right-footed central midfielder with current U.S. match footage, recent recognition, and direct communication available.': 'Équipes ayant besoin d’un milieu central droitier avec images de match actuelles aux États-Unis, distinction récente et communication directe disponible.',
-      'Interested coaches and clubs': 'Coachs et clubs intéressés',
-      'For club trials, staff evaluation, pre-professional environments, or next-step opportunities, contact Rayan directly after reviewing the video sequence and Sport CV.': 'Pour des essais en club, une évaluation par le staff, des environnements préprofessionnels ou des opportunités de progression, contactez directement Rayan après avoir consulté la séquence vidéo et le CV sportif.',
-      'Email:': 'E-mail :',
-      'Phone / WhatsApp:': 'Téléphone / WhatsApp :',
-      'WhatsApp / Call': 'WhatsApp / Appel',
-      'View Player Profile': 'Voir le profil joueur',
-      'Rayan Cappai Recruitment Profile': 'Profil de recrutement Rayan Cappai',
-      'Back to top': 'Retour en haut'
-    },
-    attributes: {
-      'Primary navigation': 'Navigation principale',
-      'Rayan Cappai home': 'Accueil Rayan Cappai',
-      'Select website language': 'Sélectionner la langue du site',
-      'Key recruitment badges': 'Badges clés de recrutement',
-      'Coach priority actions': 'Actions prioritaires pour les coachs',
-      'Watch Rayan Cappai 2026 highlights video in a new tab': 'Voir la vidéo des highlights 2026 de Rayan Cappai dans un nouvel onglet',
-      'Watch Rayan Cappai latest full match number 27 from June 20 2026 in a new tab': 'Voir le dernier match complet numéro 27 de Rayan Cappai du 20 juin 2026 dans un nouvel onglet',
-      'Download Rayan Cappai Sport CV in English': 'Télécharger le CV sportif de Rayan Cappai en anglais',
-      'Download Rayan Cappai Sport CV in French': 'Télécharger le CV sportif de Rayan Cappai en français',
-      'Download Rayan Cappai Sport CV in Spanish': 'Télécharger le CV sportif de Rayan Cappai en espagnol',
-      'Coach review sequence': 'Séquence d’analyse pour les coachs',
-      'Sport CV download options': 'Options de téléchargement du CV sportif',
-      'Recent action photos of Rayan Cappai': 'Photos récentes de Rayan Cappai en action',
-      'Northeast Conference Team of the Week official visual': 'Visuel officiel de l’équipe type de la semaine de la Northeast Conference',
-      'Northeast Conference Team of the Week official visual showing Rayan Cappai with First State FC': 'Visuel officiel de l’équipe type de la semaine de la Northeast Conference montrant Rayan Cappai avec First State FC',
-      'Rayan Cappai carrying the ball forward in a Summer League match': 'Rayan Cappai conduit le ballon vers l’avant lors d’un match de Summer League',
-      'Rayan Cappai controlling possession under midfield pressure': 'Rayan Cappai contrôle la possession sous pression au milieu de terrain',
-      'Rayan Cappai striking a forward pass during Summer League action': 'Rayan Cappai joue une passe vers l’avant pendant une action de Summer League',
-      'Rayan Cappai scanning the field before receiving the ball': 'Rayan Cappai analyse le terrain avant de recevoir le ballon'
-    }
+const content={
+  en:{
+    nav:['Snapshot','Recognition','Video','Profile','Sport CV','Action Photos','Recruiting Fit','Contact'],
+    heroTop:'Club recruitment · Central midfielder · France + United States',
+    pos:'2006 French Central Midfielder | Club Trial / Evaluation',
+    hero:'U17 Nationaux / U19 Nationaux background in France, then U.S. experience with William Penn University and current U.S. Summer League with First State FC / Midnight Riders. Selected in the Northeast Conference Team of the Week for June 26 - July 2, 2026. Available for club trial and next-step evaluation, with 2026 highlights and full-match footage ready for staff review.',
+    badges:['2006-born','1.82 m / 77 kg','Right-footed','Central Midfielder','Northeast Team of the Week'],
+    review:['Club Review','Central Midfielder','U17 Nationaux / U19 Nationaux','William Penn University','First State FC / Midnight Riders','Latest Full Match #27','Sport CV PDFs'],
+    snap:['Recruitment Snapshot','Key facts at a glance','Concise recruitment data for coaches, scouts, sporting directors, and club staff.'],
+    stats:[['Position','Central Midfielder'],['Recognition','Northeast Conference Team of the Week'],['French Youth Level','U17 Nationaux / U19 Nationaux'],['Current Club','First State FC / Midnight Riders'],['Current Level','U.S. Summer League'],['Height / Weight','1.82 m / 77 kg'],['Foot','Right-footed'],['U.S. Experience','William Penn University + First State FC'],['Availability','Club trial / evaluation']],
+    rec:['Recent Recognition','Northeast Conference Team of the Week','Selected in the Northeast Conference Team of the Week for June 26 - July 2, 2026 with First State FC.'],
+    video:['Video Evaluation','Highlights 2026 + latest full-match reference','Start with the 2026 highlights, then use the June 20, 2026 full match to evaluate decisions, positioning, tempo, and work rate. Rayan wears number 27.','Fast review','Highlights 2026 Rayan Cappai','Latest 2026 highlight reel for a fast first review of technical quality, movement, and ball security.','Latest full-match review','Latest Full Match — June 20, 2026','Full-match reference from June 20, 2026. Rayan wears number 27.','Watch Latest Full Match #27'],
+    profile:['Best evaluated as a central midfielder: reliable in possession, useful between phases, and visible in current U.S. Summer League footage.','Coach-facing profile','Why review Rayan?','U17 Nationaux / U19 Nationaux background in France before moving into U.S. environments.','U.S. experience combines William Penn University and current U.S. Summer League competition with First State FC / Midnight Riders.','Central midfielder profile: reliable in possession, connects play, and supports both sides of the ball.','Recent Northeast Conference Team of the Week selection adds a current performance marker.','Latest full-match video supports evaluation beyond highlights: scanning, tempo control, defensive work, and decisions under pressure.'],
+    cv:['Sport CV','Download the Sport CV','Download the CV in the preferred language.','PDF downloads','Download CV — English','Télécharger CV — Français','Descargar CV — Español'],
+    photos:['Action Photos','Current match photo set','Action photos remain available for visual context.'],
+    docs:['Supporting Documents','Additional documents','Sporting, academic, and reference documents are available by email request if needed by club staff.','Request Documents'],
+    fit:['Recruiting fit','Best-fit opportunities','Clubs seeking a 2006 central midfielder with U17 Nationaux / U19 Nationaux background and current U.S. match footage.','Pre-professional and semi-professional environments that value midfield range, reliable possession, and full-match evaluation.','Teams needing a right-footed central midfielder with current U.S. match footage, recent recognition, and direct communication available.'],
+    contact:['Contact','Interested coaches and clubs','For club trials, staff evaluation, pre-professional environments, or next-step opportunities, contact Rayan directly after reviewing the video sequence and Sport CV.','Email:','Phone / WhatsApp:','Contact Rayan','WhatsApp / Call','View Player Profile','Rayan Cappai Recruitment Profile','Back to top']
   },
-  es: {
-    text: {
-      'Skip to content': 'Saltar al contenido',
-      'Open navigation': 'Abrir navegación',
-      'Snapshot': 'Resumen',
-      'Recognition': 'Reconocimiento',
-      'Video': 'Vídeo',
-      'Profile': 'Perfil',
-      'Sport CV': 'CV deportivo',
-      'Action Photos': 'Fotos en acción',
-      'Recruiting Fit': 'Perfil buscado',
-      'Contact': 'Contacto',
-      'Club recruitment · Central midfielder · France + United States': 'Reclutamiento de club · Mediocampista central · Francia + Estados Unidos',
-      'Rayan Cappai': 'Rayan Cappai',
-      '2006 French Central Midfielder | Club Trial / Evaluation': 'Mediocampista central francés 2006 | Prueba / evaluación de club',
-      'U17 Nationaux / U19 Nationaux background in France, then U.S. experience with William Penn University and current U.S. Summer League with First State FC / Midnight Riders. Selected in the Northeast Conference Team of the Week for June 26 - July 2, 2026. Available for club trial and next-step evaluation, with 2026 highlights and full-match footage ready for staff review.': 'Trayectoria en U17 Nationaux / U19 Nationaux en Francia, luego experiencia en Estados Unidos con William Penn University y actualmente en la U.S. Summer League con First State FC / Midnight Riders. Seleccionado en el equipo de la semana de la Northeast Conference del 26 de junio al 2 de julio de 2026. Disponible para prueba o evaluación de club, con highlights 2026 y partido completo listos para revisión del staff.',
-      '2006-born': 'Nacido en 2006',
-      '1.82 m / 77 kg': '1,82 m / 77 kg',
-      'Right-footed': 'Diestro',
-      'Central Midfielder': 'Mediocampista central',
-      'Northeast Team of the Week': 'Equipo de la semana Northeast',
-      'Highlights 2026 Rayan Cappai': 'Highlights 2026 Rayan Cappai',
-      'Latest Full Match — June 20, 2026 (#27)': 'Último partido completo — 20 de junio de 2026 (#27)',
-      'Download CV — English': 'Descargar CV — Inglés',
-      'Télécharger CV — Français': 'Descargar CV — Francés',
-      'Descargar CV — Español': 'Descargar CV — Español',
-      'Contact Rayan': 'Contactar a Rayan',
-      'Club Review': 'Evaluación del club',
-      'Latest Full Match #27': 'Último partido completo #27',
-      'Sport CV PDFs': 'PDF del CV deportivo',
-      'Direct WhatsApp contact': 'Contacto directo por WhatsApp',
-      'Recruitment Snapshot': 'Resumen de reclutamiento',
-      'Key facts at a glance': 'Datos clave de un vistazo',
-      'Concise recruitment data for coaches, scouts, sporting directors, and club staff.': 'Datos de reclutamiento concisos para entrenadores, ojeadores, directores deportivos y staffs de club.',
-      'Position': 'Posición',
-      'French Youth Level': 'Nivel juvenil en Francia',
-      'Current Club': 'Club actual',
-      'Current Level': 'Nivel actual',
-      'Height / Weight': 'Altura / Peso',
-      'Foot': 'Pie',
-      'U.S. Experience': 'Experiencia en Estados Unidos',
-      'Availability': 'Disponibilidad',
-      'Northeast Conference Team of the Week': 'Equipo de la semana de la Northeast Conference',
-      'U.S. Summer League': 'U.S. Summer League',
-      'William Penn University + First State FC': 'William Penn University + First State FC',
-      'Club trial / evaluation': 'Prueba / evaluación de club',
-      'Recent Recognition': 'Reconocimiento reciente',
-      'Selected in the Northeast Conference Team of the Week for June 26 - July 2, 2026 with First State FC.': 'Seleccionado en el equipo de la semana de la Northeast Conference del 26 de junio al 2 de julio de 2026 con First State FC.',
-      'Video Evaluation': 'Evaluación en vídeo',
-      'Highlights 2026 + latest full-match reference': 'Highlights 2026 + último partido completo de referencia',
-      'Start with the 2026 highlights, then use the June 20, 2026 full match to evaluate decisions, positioning, tempo, and work rate. Rayan wears number 27.': 'Empieza con los highlights 2026 y luego utiliza el partido completo del 20 de junio de 2026 para evaluar decisiones, posicionamiento, ritmo y volumen de trabajo. Rayan lleva el número 27.',
-      '2026': '2026',
-      'Fast review': 'Revisión rápida',
-      'Latest 2026 highlight reel for a fast first review of technical quality, movement, and ball security.': 'Vídeo reciente de highlights 2026 para una primera revisión rápida de la calidad técnica, los movimientos y la seguridad con el balón.',
-      'Latest full-match review': 'Última revisión de partido completo',
-      'Latest Full Match — June 20, 2026': 'Último partido completo — 20 de junio de 2026',
-      'Full-match reference from June 20, 2026. Rayan wears number 27.': 'Partido completo de referencia del 20 de junio de 2026. Rayan lleva el número 27.',
-      'Watch Latest Full Match #27': 'Ver último partido completo #27',
-      'Best evaluated as a central midfielder: reliable in possession, useful between phases, and visible in current U.S. Summer League footage.': 'Se evalúa mejor como mediocampista central: fiable en posesión, útil entre fases y visible en imágenes actuales de la U.S. Summer League.',
-      'Coach-facing profile': 'Perfil para entrenadores',
-      'Why review Rayan?': '¿Por qué evaluar a Rayan?',
-      'U17 Nationaux / U19 Nationaux background in France before moving into U.S. environments.': 'Trayectoria en U17 Nationaux / U19 Nationaux en Francia antes de incorporarse a entornos de Estados Unidos.',
-      'U.S. experience combines William Penn University and current U.S. Summer League competition with First State FC / Midnight Riders.': 'Su experiencia en Estados Unidos combina William Penn University y la competición actual en la U.S. Summer League con First State FC / Midnight Riders.',
-      'Central midfielder profile: reliable in possession, connects play, and supports both sides of the ball.': 'Perfil de mediocampista central: fiable en posesión, conecta el juego y trabaja en ambas fases.',
-      'Recent Northeast Conference Team of the Week selection adds a current performance marker.': 'Su reciente selección en el equipo de la semana de la Northeast Conference añade una referencia actual de rendimiento.',
-      'Latest full-match video supports evaluation beyond highlights: scanning, tempo control, defensive work, and decisions under pressure.': 'El último vídeo de partido completo permite evaluar más allá de los highlights: lectura del juego, control del ritmo, trabajo defensivo y decisiones bajo presión.',
-      'Download the Sport CV': 'Descargar el CV deportivo',
-      'Download the CV in the preferred language.': 'Descarga el CV en el idioma preferido.',
-      'PDF downloads': 'Descargas PDF',
-      'Current match photo set': 'Fotos actuales de partido',
-      'Action photos remain available for visual context.': 'Las fotos en acción siguen disponibles como contexto visual.',
-      'Supporting Documents': 'Documentos complementarios',
-      'Additional documents': 'Documentos adicionales',
-      'Sporting, academic, and reference documents are available by email request if needed by club staff.': 'Los documentos deportivos, académicos y de referencia están disponibles por solicitud de correo electrónico si el staff del club los necesita.',
-      'Request Documents': 'Solicitar documentos',
-      'Recruiting fit': 'Perfil buscado',
-      'Best-fit opportunities': 'Oportunidades más adecuadas',
-      'Clubs seeking a 2006 central midfielder with U17 Nationaux / U19 Nationaux background and current U.S. match footage.': 'Clubes que buscan un mediocampista central nacido en 2006, con trayectoria en U17 Nationaux / U19 Nationaux e imágenes actuales de partidos en Estados Unidos.',
-      'Pre-professional and semi-professional environments that value midfield range, role flexibility, and full-match evaluation.': 'Entornos preprofesionales y semiprofesionales que valoran el recorrido en el mediocampo, la adaptabilidad y la evaluación en partido completo.',
-      'Teams needing a right-footed central midfielder with current U.S. match footage, recent recognition, and direct communication available.': 'Equipos que necesitan un mediocampista central diestro con imágenes actuales de partidos en Estados Unidos, reconocimiento reciente y comunicación directa disponible.',
-      'Interested coaches and clubs': 'Entrenadores y clubes interesados',
-      'For club trials, staff evaluation, pre-professional environments, or next-step opportunities, contact Rayan directly after reviewing the video sequence and Sport CV.': 'Para pruebas de club, evaluación del staff, entornos preprofesionales u oportunidades de siguiente paso, contacta directamente a Rayan después de revisar la secuencia de vídeo y el CV deportivo.',
-      'Email:': 'Correo electrónico:',
-      'Phone / WhatsApp:': 'Teléfono / WhatsApp:',
-      'WhatsApp / Call': 'WhatsApp / Llamada',
-      'View Player Profile': 'Ver perfil del jugador',
-      'Rayan Cappai Recruitment Profile': 'Perfil de reclutamiento de Rayan Cappai',
-      'Back to top': 'Volver arriba'
-    },
-    attributes: {
-      'Primary navigation': 'Navegación principal',
-      'Rayan Cappai home': 'Inicio de Rayan Cappai',
-      'Select website language': 'Seleccionar idioma del sitio',
-      'Key recruitment badges': 'Insignias clave de reclutamiento',
-      'Coach priority actions': 'Acciones prioritarias para entrenadores',
-      'Watch Rayan Cappai 2026 highlights video in a new tab': 'Ver el vídeo de highlights 2026 de Rayan Cappai en una pestaña nueva',
-      'Watch Rayan Cappai latest full match number 27 from June 20 2026 in a new tab': 'Ver el último partido completo número 27 de Rayan Cappai del 20 de junio de 2026 en una pestaña nueva',
-      'Download Rayan Cappai Sport CV in English': 'Descargar el CV deportivo de Rayan Cappai en inglés',
-      'Download Rayan Cappai Sport CV in French': 'Descargar el CV deportivo de Rayan Cappai en francés',
-      'Download Rayan Cappai Sport CV in Spanish': 'Descargar el CV deportivo de Rayan Cappai en español',
-      'Coach review sequence': 'Secuencia de evaluación para entrenadores',
-      'Sport CV download options': 'Opciones de descarga del CV deportivo',
-      'Recent action photos of Rayan Cappai': 'Fotos recientes de Rayan Cappai en acción',
-      'Northeast Conference Team of the Week official visual': 'Visual oficial del equipo de la semana de la Northeast Conference',
-      'Northeast Conference Team of the Week official visual showing Rayan Cappai with First State FC': 'Visual oficial del equipo de la semana de la Northeast Conference que muestra a Rayan Cappai con First State FC',
-      'Rayan Cappai carrying the ball forward in a Summer League match': 'Rayan Cappai conduce el balón hacia adelante en un partido de Summer League',
-      'Rayan Cappai controlling possession under midfield pressure': 'Rayan Cappai controla la posesión bajo presión en el mediocampo',
-      'Rayan Cappai striking a forward pass during Summer League action': 'Rayan Cappai golpea un pase hacia adelante durante una acción de Summer League',
-      'Rayan Cappai scanning the field before receiving the ball': 'Rayan Cappai observa el campo antes de recibir el balón'
-    }
+  fr:{
+    nav:['Aperçu','Distinction','Vidéo','Profil','CV sportif','Photos en action','Profil recherché','Contact'],
+    heroTop:'Recrutement club · Milieu central · France + États-Unis',pos:'Milieu central français 2006 | Essai / évaluation club',
+    hero:'Parcours en U17 Nationaux / U19 Nationaux en France, puis expérience aux États-Unis avec William Penn University et l’U.S. Summer League actuelle avec First State FC / Midnight Riders. Sélectionné dans l’équipe type de la semaine de la Northeast Conference du 26 juin au 2 juillet 2026. Disponible pour essai ou évaluation en club, avec highlights 2026 et matchs complets prêts pour les staffs.',
+    badges:['Né en 2006','1,82 m / 77 kg','Droitier','Milieu central','Équipe type Northeast'],review:['Revue club','Milieu central','U17 Nationaux / U19 Nationaux','William Penn University','First State FC / Midnight Riders','Dernier match complet #27','CV sportif PDF'],
+    snap:['Aperçu recrutement','Points clés en un coup d’œil','Informations clés pour coachs, recruteurs, directeurs sportifs et staffs de clubs.'],stats:[['Poste','Milieu central'],['Distinction','Équipe type de la semaine — Northeast Conference'],['Niveau jeunes France','U17 Nationaux / U19 Nationaux'],['Club actuel','First State FC / Midnight Riders'],['Niveau actuel','U.S. Summer League'],['Taille / poids','1,82 m / 77 kg'],['Pied','Droitier'],['Expérience États-Unis','William Penn University + First State FC'],['Disponibilité','Essai / évaluation club']],
+    rec:['Distinction récente','Équipe type de la semaine — Northeast Conference','Sélectionné dans l’équipe type de la semaine de la Northeast Conference du 26 juin au 2 juillet 2026 avec First State FC.'],
+    video:['Évaluation vidéo','Highlights 2026 + dernier match complet de référence','Commencez par les highlights 2026, puis utilisez le match complet du 20 juin 2026 pour évaluer les décisions, le positionnement, le tempo et le volume de travail. Rayan porte le numéro 27.','Évaluation rapide','Highlights 2026 Rayan Cappai','Derniers highlights 2026 pour une première évaluation rapide de la qualité technique, des déplacements et de la sécurité balle au pied.','Dernière analyse match complet','Dernier match complet — 20 juin 2026','Match complet de référence du 20 juin 2026. Rayan porte le numéro 27.','Voir le dernier match complet #27'],
+    profile:['À évaluer comme milieu central : fiable dans la possession, utile pour relier les phases et visible sur des images actuelles de U.S. Summer League.','Profil pour staffs','Pourquoi étudier le profil de Rayan ?','Parcours en U17 Nationaux / U19 Nationaux en France avant l’expérience aux États-Unis.','Son expérience aux États-Unis combine William Penn University et la U.S. Summer League actuelle avec First State FC / Midnight Riders.','Profil de milieu central : fiable dans la possession, connecte le jeu et travaille dans les deux phases.','Sa sélection récente dans l’équipe type de la Northeast Conference ajoute un marqueur de performance actuel.','La dernière vidéo en match complet permet une évaluation au-delà des highlights : prise d’information, contrôle du tempo, travail défensif et décisions sous pression.'],
+    cv:['CV sportif','Télécharger le CV sportif','Téléchargez le CV dans la langue souhaitée.','Téléchargements PDF','Télécharger CV — Anglais','Télécharger CV — Français','Télécharger CV — Espagnol'],photos:['Photos en action','Sélection actuelle de photos de match','Les photos en action restent disponibles pour le contexte visuel.'],docs:['Documents complémentaires','Documents additionnels','Les documents sportifs, académiques et références sont disponibles sur demande par email si le staff du club en a besoin.','Demander les documents'],
+    fit:['Profil de recrutement','Opportunités les plus adaptées','Clubs recherchant un milieu central 2006 avec parcours U17 Nationaux / U19 Nationaux et images récentes aux États-Unis.','Environnements préprofessionnels et semi-professionnels qui valorisent le volume au milieu, la possession fiable et l’évaluation sur match complet.','Équipes recherchant un milieu central droitier avec images récentes aux États-Unis, distinction récente et échange direct possible.'],
+    contact:['Contact','Coachs et clubs intéressés','Pour un essai en club, une évaluation staff, un environnement préprofessionnel ou une prochaine opportunité, contactez Rayan directement après avoir consulté les vidéos et le CV sportif.','Email :','Téléphone / WhatsApp :','Contacter Rayan','WhatsApp / Appel','Voir le profil joueur','Profil de recrutement Rayan Cappai','Retour en haut']
+  },
+  es:{
+    nav:['Resumen','Reconocimiento','Vídeo','Perfil','CV deportivo','Fotos en acción','Perfil buscado','Contacto'],heroTop:'Reclutamiento de club · Mediocampista central · Francia + Estados Unidos',pos:'Mediocampista central francés 2006 | Prueba / evaluación de club',
+    hero:'Trayectoria en U17 Nationaux / U19 Nationaux en Francia, luego experiencia en Estados Unidos con William Penn University y la U.S. Summer League actual con First State FC / Midnight Riders. Seleccionado en el equipo de la semana de la Northeast Conference del 26 de junio al 2 de julio de 2026. Disponible para prueba o evaluación de club, con highlights 2026 y partidos completos listos para revisión del staff.',
+    badges:['Nacido en 2006','1,82 m / 77 kg','Diestro','Mediocampista central','Equipo de la semana Northeast'],review:['Revisión del club','Mediocampista central','U17 Nationaux / U19 Nationaux','William Penn University','First State FC / Midnight Riders','Último partido completo #27','CV deportivo PDF'],
+    snap:['Resumen de reclutamiento','Datos clave de un vistazo','Información concisa para entrenadores, reclutadores, directores deportivos y staffs de clubes.'],stats:[['Posición','Mediocampista central'],['Reconocimiento','Equipo de la semana — Northeast Conference'],['Nivel juvenil francés','U17 Nationaux / U19 Nationaux'],['Club actual','First State FC / Midnight Riders'],['Nivel actual','U.S. Summer League'],['Altura / peso','1,82 m / 77 kg'],['Pie','Diestro'],['Experiencia en Estados Unidos','William Penn University + First State FC'],['Disponibilidad','Prueba / evaluación de club']],
+    rec:['Reconocimiento reciente','Equipo de la semana — Northeast Conference','Seleccionado en el equipo de la semana de la Northeast Conference del 26 de junio al 2 de julio de 2026 con First State FC.'],
+    video:['Evaluación en vídeo','Highlights 2026 + último partido completo de referencia','Empiece por los highlights 2026 y luego utilice el partido completo del 20 de junio de 2026 para evaluar decisiones, posicionamiento, ritmo y volumen de trabajo. Rayan lleva el número 27.','Revisión rápida','Highlights 2026 Rayan Cappai','Últimos highlights 2026 para una primera revisión rápida de la calidad técnica, los movimientos y la seguridad con balón.','Última revisión de partido completo','Último partido completo — 20 de junio de 2026','Partido completo de referencia del 20 de junio de 2026. Rayan lleva el número 27.','Ver último partido completo #27'],
+    profile:['Mejor evaluado como mediocampista central: fiable en la posesión, útil para conectar fases y visible en imágenes actuales de U.S. Summer League.','Perfil para staffs','¿Por qué revisar a Rayan?','Trayectoria en U17 Nationaux / U19 Nationaux en Francia antes de pasar a entornos de Estados Unidos.','Su experiencia en Estados Unidos combina William Penn University y la competición actual de U.S. Summer League con First State FC / Midnight Riders.','Perfil de mediocampista central: fiable en la posesión, conecta el juego y ayuda en ambas fases.','Su selección reciente en el equipo de la semana de la Northeast Conference añade una referencia actual de rendimiento.','El último vídeo de partido completo permite evaluar más allá de los highlights: lectura del juego, control del ritmo, trabajo defensivo y decisiones bajo presión.'],
+    cv:['CV deportivo','Descargar el CV deportivo','Descargue el CV en el idioma preferido.','Descargas PDF','Descargar CV — Inglés','Descargar CV — Francés','Descargar CV — Español'],photos:['Fotos en acción','Selección actual de fotos de partido','Las fotos en acción siguen disponibles como contexto visual.'],docs:['Documentos complementarios','Documentos adicionales','Los documentos deportivos, académicos y referencias están disponibles por email si el staff del club los necesita.','Solicitar documentos'],
+    fit:['Perfil de reclutamiento','Oportunidades más adecuadas','Clubes que buscan un mediocampista central 2006 con trayectoria U17 Nationaux / U19 Nationaux e imágenes recientes en Estados Unidos.','Entornos preprofesionales y semiprofesionales que valoran el recorrido en el medio, la posesión fiable y la evaluación en partido completo.','Equipos que necesitan un mediocampista central diestro con imágenes actuales en Estados Unidos, reconocimiento reciente y comunicación directa disponible.'],
+    contact:['Contacto','Entrenadores y clubes interesados','Para pruebas de club, evaluación del staff, entornos preprofesionales o próximas oportunidades, contacte directamente con Rayan después de revisar la secuencia de vídeo y el CV deportivo.','Email:','Teléfono / WhatsApp:','Contactar a Rayan','WhatsApp / llamada','Ver perfil del jugador','Perfil de reclutamiento de Rayan Cappai','Volver arriba']
   }
 };
-const originalTextNodes = new Map();
-const originalAttributes = new Map();
-
-const getLanguage = () => {
-  try {
-    const storedLanguage = window.localStorage.getItem(languageStorageKey);
-    return supportedLanguages.includes(storedLanguage) ? storedLanguage : defaultLanguage;
-  } catch {
-    return defaultLanguage;
-  }
-};
-
-const storeLanguage = (language) => {
-  try {
-    window.localStorage.setItem(languageStorageKey, language);
-  } catch {
-    // Keep language switching functional even when storage is unavailable.
-  }
-};
-
-const insertRecognitionSection = () => {
-  const snapshotSection = document.querySelector('#snapshot');
-  if (!snapshotSection || document.querySelector('#recognition')) return;
-
-  snapshotSection.insertAdjacentHTML('afterend', `
-    <section class="section" id="recognition" aria-labelledby="recognition-title">
-      <div class="container two-column">
-        <div>
-          <p class="eyebrow">Recent Recognition</p>
-          <h2 id="recognition-title">Northeast Conference Team of the Week</h2>
-          <p>Selected in the Northeast Conference Team of the Week for June 26 - July 2, 2026 with First State FC.</p>
-        </div>
-
-        <article class="profile-card" aria-label="Northeast Conference Team of the Week official visual" style="overflow:hidden; padding:0;">
-          <img
-            src="rayan-cappai-team-northeast-conference.jpg?v=20260704-real-photo"
-            alt="Northeast Conference Team of the Week official visual showing Rayan Cappai with First State FC"
-            loading="lazy"
-            decoding="async"
-            style="display:block; width:100%; height:auto; border-radius:24px;"
-          />
-        </article>
-      </div>
-    </section>
-  `);
-
-  if (navMenu && !navMenu.querySelector('a[href="#recognition"]')) {
-    const item = document.createElement('li');
-    item.innerHTML = '<a href="#recognition">Recognition</a>';
-    navMenu.querySelector('a[href="#snapshot"]')?.parentElement?.insertAdjacentElement('afterend', item);
-  }
-};
-
-const normalizeCentralMidfielderWording = () => {
-  const firstEyebrow = document.querySelector('.eyebrow');
-  if (firstEyebrow) firstEyebrow.textContent = 'Club recruitment · Central midfielder · France + United States';
-
-  const heroPosition = document.querySelector('.hero-position');
-  if (heroPosition) heroPosition.textContent = '2006 French Central Midfielder | Club Trial / Evaluation';
-
-  const heroCopy = document.querySelector('.hero-copy');
-  if (heroCopy) {
-    heroCopy.textContent = 'U17 Nationaux / U19 Nationaux background in France, then U.S. experience with William Penn University and current U.S. Summer League with First State FC / Midnight Riders. Selected in the Northeast Conference Team of the Week for June 26 - July 2, 2026. Available for club trial and next-step evaluation, with 2026 highlights and full-match footage ready for staff review.';
-  }
-
-  const badges = document.querySelector('.hero-badges');
-  if (badges) {
-    badges.innerHTML = '<span>2006-born</span><span>1.82 m / 77 kg</span><span>Right-footed</span><span>Central Midfielder</span><span>Northeast Team of the Week</span>';
-  }
-
-  document.querySelectorAll('.stat-card').forEach((card) => {
-    const label = card.querySelector('.stat-label');
-    const value = card.querySelector('strong');
-    if (label?.textContent.trim() === 'Role') {
-      label.textContent = 'Recognition';
-      if (value) value.textContent = 'Northeast Conference Team of the Week';
-    }
-  });
-
-  document.querySelectorAll('.profile-card p').forEach((paragraph) => {
-    if (paragraph.textContent.includes('Best evaluated as a central midfielder')) {
-      paragraph.textContent = 'Best evaluated as a central midfielder: reliable in possession, useful between phases, and visible in current U.S. Summer League footage.';
-    }
-  });
-
-  document.querySelectorAll('.profile-lines li, .fit-bullets li').forEach((item) => {
-    const text = item.textContent.trim();
-    if (text.startsWith('Latest full-match video supports evaluation beyond highlights') && !item.parentElement.textContent.includes('Recent Northeast Conference Team of the Week selection adds a current performance marker.')) {
-      item.insertAdjacentHTML('beforebegin', '<li>Recent Northeast Conference Team of the Week selection adds a current performance marker.</li>');
-    }
-  });
-};
-
-const captureOriginalText = () => {
-  originalTextNodes.clear();
-  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
-    acceptNode(node) {
-      return node.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
-    }
-  });
-  let node = walker.nextNode();
-  while (node) {
-    originalTextNodes.set(node, node.nodeValue);
-    node = walker.nextNode();
-  }
-};
-
-const captureOriginalAttributes = () => {
-  originalAttributes.clear();
-  document.querySelectorAll('[aria-label], img[alt], [data-i18n-content]').forEach((element) => {
-    originalAttributes.set(element, {
-      ariaLabel: element.getAttribute('aria-label'),
-      alt: element.getAttribute('alt'),
-      content: element.getAttribute('content')
-    });
-  });
-};
-
-const translateTextNode = (node, dictionary) => {
-  const original = originalTextNodes.get(node);
-  if (!original) return;
-  const key = original.trim();
-  const translated = dictionary?.text?.[key] || key;
-  const leading = original.match(/^\s*/)[0];
-  const trailing = original.match(/\s*$/)[0];
-  node.nodeValue = `${leading}${translated}${trailing}`;
-};
-
-const applyLanguage = (language) => {
-  const dictionary = translations[language];
-  originalTextNodes.forEach((_, node) => translateTextNode(node, dictionary));
-  document.querySelectorAll('[aria-label]').forEach((element) => {
-    const saved = originalAttributes.get(element);
-    const key = element.dataset.i18nAriaLabel || saved?.ariaLabel || element.getAttribute('aria-label');
-    element.setAttribute('aria-label', dictionary?.attributes?.[key] || key);
-  });
-  document.querySelectorAll('img[alt]').forEach((element) => {
-    const saved = originalAttributes.get(element);
-    const key = saved?.alt || element.getAttribute('alt');
-    element.setAttribute('alt', dictionary?.attributes?.[key] || key);
-  });
-  document.documentElement.lang = language;
-  languageButtons.forEach((button) => {
-    const active = button.dataset.langOption === language;
-    button.classList.toggle('is-active', active);
-    button.setAttribute('aria-pressed', String(active));
-  });
-};
-
-let scrollTicking = false;
-const setHeaderState = () => {
-  header?.classList.toggle('is-scrolled', window.scrollY > 12);
-  scrollTicking = false;
-};
-const requestHeaderState = () => {
-  if (!scrollTicking) {
-    window.requestAnimationFrame(setHeaderState);
-    scrollTicking = true;
-  }
-};
-const closeMenu = () => {
-  document.body.classList.remove('nav-open');
-  navMenu?.classList.remove('is-open');
-  navToggle?.setAttribute('aria-expanded', 'false');
-};
-
-languageButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const selectedLanguage = button.dataset.langOption;
-    if (!supportedLanguages.includes(selectedLanguage)) return;
-    storeLanguage(selectedLanguage);
-    applyLanguage(selectedLanguage);
-  });
-});
-
-navToggle?.addEventListener('click', () => {
-  const isOpen = navMenu?.classList.toggle('is-open');
-  document.body.classList.toggle('nav-open', Boolean(isOpen));
-  navToggle.setAttribute('aria-expanded', String(Boolean(isOpen)));
-});
-navMenu?.addEventListener('click', (event) => {
-  if (event.target instanceof HTMLAnchorElement) closeMenu();
-});
-window.addEventListener('scroll', requestHeaderState, { passive: true });
-window.addEventListener('resize', () => {
-  if (window.innerWidth >= 860) closeMenu();
-});
-if (year) year.textContent = new Date().getFullYear();
-
-insertRecognitionSection();
-normalizeCentralMidfielderWording();
-captureOriginalText();
-captureOriginalAttributes();
-applyLanguage(getLanguage());
-setHeaderState();
+function setText(el,v){if(el)el.textContent=v} function setList(q,a){document.querySelectorAll(q).forEach((e,i)=>{if(a[i])e.textContent=a[i]})}
+function insertRecognition(){const s=document.querySelector('#snapshot');if(!s||document.querySelector('#recognition'))return;s.insertAdjacentHTML('afterend','<section class="section" id="recognition" aria-labelledby="recognition-title"><div class="container two-column"><div><p class="eyebrow"></p><h2 id="recognition-title"></h2><p></p></div><article class="profile-card" style="overflow:hidden;padding:0"><img src="rayan-cappai-team-northeast-conference.jpg?v=20260704-real-photo" alt="Northeast Conference Team of the Week" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:24px" /></article></div></section>');if(navMenu&&!navMenu.querySelector('a[href="#recognition"]')){const li=document.createElement('li');li.innerHTML='<a href="#recognition"></a>';navMenu.querySelector('a[href="#snapshot"]')?.parentElement?.insertAdjacentElement('afterend',li)}}
+function render(lang){const c=content[lang]||content.en;setList('.nav-menu a:not(.nav-cta)',c.nav.slice(0,7));setText(document.querySelector('.nav-cta'),c.nav[7]);setText(document.querySelector('.hero-content .eyebrow'),c.heroTop);setText(document.querySelector('.hero-position'),c.pos);setText(document.querySelector('.hero-copy'),c.hero);setList('.hero-badges span',c.badges);setText(document.querySelector('.availability-pill'),c.review[0]);setList('.coach-review-list li',c.review.slice(1));setText(document.querySelector('#snapshot .eyebrow'),c.snap[0]);setText(document.querySelector('#snapshot-title'),c.snap[1]);setText(document.querySelector('#snapshot .section-heading p:last-child'),c.snap[2]);document.querySelectorAll('.stat-card').forEach((card,i)=>{if(c.stats[i]){setText(card.querySelector('.stat-label'),c.stats[i][0]);setText(card.querySelector('strong'),c.stats[i][1])}});setText(document.querySelector('#recognition .eyebrow'),c.rec[0]);setText(document.querySelector('#recognition-title'),c.rec[1]);setText(document.querySelector('#recognition-title+p'),c.rec[2]);setText(document.querySelector('#video .eyebrow'),c.video[0]);setText(document.querySelector('#video-title'),c.video[1]);setText(document.querySelector('#video .section-heading p:last-child'),c.video[2]);document.querySelectorAll('#video .resource-card').forEach((card,i)=>{const off=i?6:3;setText(card.querySelector('.eyebrow'),c.video[off]);setText(card.querySelector('h3'),c.video[off+1]);setText(card.querySelector('p:not(.eyebrow)'),c.video[off+2]);if(i)setText(card.querySelector('.btn'),c.video[9])});setText(document.querySelector('#profile .profile-card p'),c.profile[0]);setText(document.querySelector('#profile .eyebrow'),c.profile[1]);setText(document.querySelector('#profile-title'),c.profile[2]);setList('#profile .profile-lines li',c.profile.slice(3));setText(document.querySelector('#cv .eyebrow'),c.cv[0]);setText(document.querySelector('#cv-title'),c.cv[1]);setText(document.querySelector('#cv-title+p'),c.cv[2]);setText(document.querySelector('#cv h3'),c.cv[3]);setList('#cv .btn',c.cv.slice(4));setText(document.querySelector('#action-photos .eyebrow'),c.photos[0]);setText(document.querySelector('#action-photos-title'),c.photos[1]);setText(document.querySelector('#action-photos .section-heading p:last-child'),c.photos[2]);setText(document.querySelector('#academics .eyebrow'),c.docs[0]);setText(document.querySelector('#documents-title'),c.docs[1]);setText(document.querySelector('#documents-title+p'),c.docs[2]);setText(document.querySelector('#academics .btn'),c.docs[3]);setText(document.querySelector('#fit .eyebrow'),c.fit[0]);setText(document.querySelector('#fit-title'),c.fit[1]);setList('#fit li',c.fit.slice(2));setText(document.querySelector('#contact .eyebrow'),c.contact[0]);setText(document.querySelector('#contact-title'),c.contact[1]);setText(document.querySelector('#contact-title+p'),c.contact[2]);setList('.contact-actions .btn',c.contact.slice(5,8));setText(document.querySelector('.site-footer p'),`© ${new Date().getFullYear()} ${c.contact[8]}`);setText(document.querySelector('.site-footer a'),c.contact[9]);document.documentElement.lang=lang;buttons.forEach(b=>{const a=b.dataset.langOption===lang;b.classList.toggle('is-active',a);b.setAttribute('aria-pressed',String(a))})}
+function closeMenu(){document.body.classList.remove('nav-open');navMenu?.classList.remove('is-open');navToggle?.setAttribute('aria-expanded','false')}
+insertRecognition();render(localStorage.getItem(key)||defaultLanguage);buttons.forEach(b=>b.addEventListener('click',()=>{const l=b.dataset.langOption;if(langs.includes(l)){localStorage.setItem(key,l);render(l)}}));navToggle?.addEventListener('click',()=>{const o=navMenu?.classList.toggle('is-open');document.body.classList.toggle('nav-open',!!o);navToggle.setAttribute('aria-expanded',String(!!o))});navMenu?.addEventListener('click',e=>{if(e.target instanceof HTMLAnchorElement)closeMenu()});window.addEventListener('scroll',()=>header?.classList.toggle('is-scrolled',scrollY>12),{passive:true});window.addEventListener('resize',()=>{if(innerWidth>=860)closeMenu()});
