@@ -6,7 +6,7 @@ const languageButtons = document.querySelectorAll('[data-lang-option]');
 const languageStorageKey = 'rayan-cappai-language';
 const supportedLanguages = ['en', 'fr', 'es'];
 const defaultLanguage = 'en';
-const teamOfWeekImage = 'rayan-cappai-team-northeast-conference.jpg';
+const teamOfWeekImage = 'rayan-cappai-team-northeast-conference.jpg?v=20260704-real';
 
 const translations = {
   fr: {
@@ -32,10 +32,7 @@ const translations = {
       'Northeast Team of the Week': 'Équipe type Northeast',
       'Northeast Conference Team of the Week': 'Équipe type de la semaine — Northeast Conference',
       'Recent Recognition': 'Distinction récente',
-      'Selected for June 26 - July 2, 2026 after his recent First State FC performances. This gives coaches a recent, competition-based proof point in addition to the highlights and full-match video.': 'Sélectionné pour la période du 26 juin au 2 juillet 2026 après ses performances récentes avec First State FC. Cela donne aux coachs une preuve récente, liée à la compétition, en plus des highlights et des matchs complets.',
-      'Selected in the Northeast Conference Team of the Week — June 26 to July 2, 2026.': 'Sélectionné dans l’équipe type de la semaine de la Northeast Conference — 26 juin au 2 juillet 2026.',
-      'Recognition linked to his current U.S. Summer League period with First State FC.': 'Distinction liée à sa période actuelle en U.S. Summer League avec First State FC.',
-      'Useful recent reference for coaches reviewing performance level, match impact, and current form.': 'Référence récente utile pour les coachs qui évaluent son niveau, son impact en match et sa forme actuelle.',
+      'Selected in the Northeast Conference Team of the Week for June 26 - July 2, 2026 with First State FC.': 'Sélectionné dans l’équipe type de la semaine de la Northeast Conference du 26 juin au 2 juillet 2026 avec First State FC.',
       'Official Team of the Week visual': 'Visuel officiel Team of the Week',
       'First State FC · Northeast Conference · June 26 - July 2, 2026': 'First State FC · Northeast Conference · 26 juin - 2 juillet 2026',
       'Position': 'Poste',
@@ -104,12 +101,7 @@ const insertRecognitionSection = () => {
         <div>
           <p class="eyebrow">Recent Recognition</p>
           <h2 id="recognition-title">Northeast Conference Team of the Week</h2>
-          <p>Selected for June 26 - July 2, 2026 after his recent First State FC performances. This gives coaches a recent, competition-based proof point in addition to the highlights and full-match video.</p>
-          <ul class="check-list profile-lines">
-            <li>Selected in the Northeast Conference Team of the Week — June 26 to July 2, 2026.</li>
-            <li>Recognition linked to his current U.S. Summer League period with First State FC.</li>
-            <li>Useful recent reference for coaches reviewing performance level, match impact, and current form.</li>
-          </ul>
+          <p>Selected in the Northeast Conference Team of the Week for June 26 - July 2, 2026 with First State FC.</p>
         </div>
         <article class="profile-card" aria-label="Northeast Conference Team of the Week recognition card" style="overflow:hidden; padding:0;">
           <img src="${teamOfWeekImage}" alt="Northeast Conference Team of the Week official visual showing Rayan Cappai with First State FC" loading="lazy" decoding="async" style="display:block; width:100%; height:auto; border-radius:24px;" />
@@ -130,7 +122,8 @@ const insertRecognitionSection = () => {
 };
 
 const normalizeCentralMidfielderWording = () => {
-  document.querySelector('.eyebrow') && (document.querySelector('.eyebrow').textContent = 'Club recruitment · Central midfielder · France + United States');
+  const firstEyebrow = document.querySelector('.eyebrow');
+  if (firstEyebrow) firstEyebrow.textContent = 'Club recruitment · Central midfielder · France + United States';
 
   const heroPosition = document.querySelector('.hero-position');
   if (heroPosition) heroPosition.textContent = '2006 French Central Midfielder | Club Trial / Evaluation';
@@ -181,7 +174,6 @@ const captureOriginalText = () => {
       return node.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
     }
   });
-
   let node = walker.nextNode();
   while (node) {
     originalTextNodes.set(node, node.nodeValue);
@@ -212,21 +204,17 @@ const translateTextNode = (node, dictionary) => {
 
 const applyLanguage = (language) => {
   const dictionary = translations[language];
-
   originalTextNodes.forEach((_, node) => translateTextNode(node, dictionary));
-
   document.querySelectorAll('[aria-label]').forEach((element) => {
     const saved = originalAttributes.get(element);
     const key = element.dataset.i18nAriaLabel || saved?.ariaLabel || element.getAttribute('aria-label');
     element.setAttribute('aria-label', dictionary?.attributes?.[key] || key);
   });
-
   document.querySelectorAll('img[alt]').forEach((element) => {
     const saved = originalAttributes.get(element);
     const key = saved?.alt || element.getAttribute('alt');
     element.setAttribute('alt', dictionary?.attributes?.[key] || key);
   });
-
   document.documentElement.lang = language;
   languageButtons.forEach((button) => {
     const active = button.dataset.langOption === language;
