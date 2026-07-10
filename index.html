@@ -34,6 +34,58 @@
 
   <title>Rayan Cappai | 2006 French Central Midfielder</title>
   <link rel="stylesheet" href="./style.css?v=20260710-pro">
+  <style>
+    .hero {
+      background:
+        linear-gradient(90deg, rgba(2, 6, 23, 0.92) 0%, rgba(2, 6, 23, 0.78) 42%, rgba(2, 6, 23, 0.42) 68%, rgba(2, 6, 23, 0.72) 100%),
+        linear-gradient(180deg, rgba(2, 6, 23, 0.18) 0%, rgba(2, 6, 23, 0.68) 100%),
+        url("./IMG-20260521-WA0007.jpg") center right 26% / cover no-repeat,
+        var(--navy-950) !important;
+    }
+
+    .hero::before {
+      background-image:
+        radial-gradient(circle at 18% 22%, rgba(212, 175, 55, 0.22), transparent 28rem),
+        linear-gradient(rgba(255, 255, 255, 0.026) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.026) 1px, transparent 1px) !important;
+      background-size: auto, 64px 64px, 64px 64px !important;
+      mask-image: linear-gradient(90deg, black, rgba(0, 0, 0, 0.5) 72%, transparent 100%) !important;
+    }
+
+    .hero-grid {
+      grid-template-columns: minmax(0, 0.86fr) minmax(280px, 0.55fr) !important;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+    }
+
+    .hero-photo {
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        min-height: calc(100vh - var(--header-height));
+        background:
+          linear-gradient(180deg, rgba(2, 6, 23, 0.78) 0%, rgba(2, 6, 23, 0.72) 42%, rgba(2, 6, 23, 0.94) 100%),
+          url("./IMG-20260521-WA0007.jpg") center top / cover no-repeat,
+          var(--navy-950) !important;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .hero-photo {
+        display: none !important;
+      }
+    }
+  </style>
 
   <script type="application/ld+json">
   {
