@@ -1,52 +1,54 @@
-# Rayan Cappai Recruitment Landing Page
+# Rayan Cappai - Official Recruitment Profile
 
-A standalone static recruitment website for Rayan Cappai, a 2006-born French central midfielder currently based in the United States.
+Multilingual football recruitment website for **Rayan Cappai**, a 2006 French central midfielder (6 / 8 / 10).
+
+## Live profile
+
+https://cc-2a.github.io/rayan-cappai-recruitment/
+
+Language-specific links:
+
+- English: `?lang=en`
+- Français: `?lang=fr`
+- Español: `?lang=es`
+
+## Recruitment flow
+
+The page is deliberately organized for a fast staff review:
+
+1. Current availability and key player facts.
+2. Highlights for first screening.
+3. Full match for unedited evaluation.
+4. Football background and verified recognition.
+5. One-page Sport CV and direct contact.
 
 ## Files
 
-- `index.html` — one-page recruitment landing page content and structure
-- `style.css` — mobile-first sports branding with dark navy / black background and neon green accents
-- `app.js` — lightweight navigation and header behavior
+- `index.html`: semantic page structure, SEO and structured data.
+- `style.css`: responsive navy/gold design.
+- `app.js`: EN/FR/ES translations, navigation and profile-link copying.
+- `Rayan_Cappai_Sport_CV_EN.pdf`: English Sport CV.
+- `Rayan_Cappai_CV_Sportif_FR.pdf`: French Sport CV.
+- `Rayan_Cappai_CV_Deportivo_ES.pdf`: Spanish Sport CV.
+- `tools/generate_cvs.py`: reproducible CV generator.
+- `robots.txt` and `sitemap.xml`: search-engine discovery.
 
-## Sections Included
+## Local review
 
-1. Hero section with player name, position, availability, and contact button
-2. Player snapshot
-3. Current Summer League status
-4. Player profile
-5. Video section for highlights and full-game footage
-6. Soccer CV section with PDF preview and download
-7. Action Photos section
-8. Academic profile
-9. Recruiting fit
-10. References
-11. Contact section
-
-## Verified Links and Contact Details
-
-These verified resources are used in `index.html` for coach-ready sharing:
-
-- Highlight Video / Updated Player Profile: `https://drive.google.com/file/d/1FALpcjSMcFmRPJZNPi_XGeGoIGmxrED_/view?usp=drivesdk`
-- Full Match 1 (#6): `https://www.youtube.com/live/TAvvrUMQAZk?si=9LWjtwi2vpR2S3uH`
-- Full Match 2 (#10): `https://www.youtube.com/live/RGb3gW8t4zk?si=LaNwfNcvGyfp-gCt`
-- Soccer CV PDFs: `Rayan_Cappai_Sport_CV_EN.pdf`, `Rayan_Cappai_CV_Sportif_FR.pdf`, `Rayan_Cappai_CV_Deportivo_ES.pdf`
-- Action Photos: uploaded match photos in this repository
-- Website / Player Profile: `https://cc-2a.github.io/rayan-cappai-recruitment/`
-- Email: `raykil132a@gmail.com`
-- WhatsApp: `https://wa.me/33611530454`
-
-Soccer CV PDF is available as a direct download; academic transcript and references are listed as available upon request.
-
-## Local Preview
-
-Open `index.html` directly in a browser, or run a simple static server:
+Open the site through a small local server so all assets and language switching behave as deployed:
 
 ```bash
-python3 -m http.server 8000
+python3 -m http.server 4173
 ```
 
-Then visit `http://localhost:8000`.
+Then open `http://localhost:4173/`.
 
-## Editing Notes
+## Regenerate the CVs
 
-This site intentionally avoids fake stats and invented achievements. Keep recruitment details factual and use only verified links and contact information.
+The generator requires ReportLab and DejaVu Sans:
+
+```bash
+python3 tools/generate_cvs.py
+```
+
+All three PDFs must remain one-page A4 documents and must be visually rendered after any update.

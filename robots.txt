@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cc-2a.github.io/rayan-cappai-recruitment/sitemap.xml
