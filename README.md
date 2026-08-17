@@ -2,6 +2,10 @@
 
 Multilingual football recruitment website for **Rayan Cappai**, a 2006 French central midfielder (6 / 8 / 10).
 
+Current status: **Nybergsund IL Trysil** (Norway, 4. divisjon menn), under contract until 31 October 2026 and open to discussions for his next sporting project.
+
+Official NFF player profile: https://www.fotball.no/fotballdata/person/profil/?fiksId=4171102
+
 ## Live profile
 
 https://cc-2a.github.io/rayan-cappai-recruitment/

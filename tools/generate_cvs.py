@@ -50,10 +50,10 @@ DATA = {
         "filename": "Rayan_Cappai_Sport_CV_EN.pdf",
         "subtitle": "2006 French Central Midfielder | 6 / 8 / 10 | Right-footed | 1.82 m / 77 kg",
         "intro": (
-            "Club trial and staff evaluation profile. French U17 National / U19 National background, "
-            "U.S. college experience at William Penn University, and recent Summer 2026 competition with First State FC."
+            "Club recruitment and staff evaluation profile. French U17 National / U19 National background, "
+            "U.S. experience and current senior competition in Norway with Nybergsund IL Trysil."
         ),
-        "strip": ["U17 / U19 National", "William Penn University", "First State FC", "Full Match #27"],
+        "strip": ["U17 / U19 National", "William Penn University", "Nybergsund IL Trysil", "Full Match #27"],
         "facts": [
             ("POSITION", "Central Midfielder"),
             ("ROLE", "6 / 8 / 10"),
@@ -61,8 +61,8 @@ DATA = {
             ("HEIGHT / WEIGHT", "1.82 m / 77 kg"),
             ("FRENCH YOUTH LEVEL", "U17 National / U19 National"),
             ("U.S. EXPERIENCE", "William Penn University + First State FC"),
-            ("RECENT COMPETITION", "First State FC - The League for Clubs, Summer 2026"),
-            ("CURRENT STATUS", "Based in France - Available for club trials / evaluation"),
+            ("CURRENT CLUB", "Nybergsund IL Trysil - Norway"),
+            ("CONTRACT / CONTACT", "Under contract until 31 October 2026 - Open to discussions for next project"),
         ],
         "sections": [
             (
@@ -77,22 +77,23 @@ DATA = {
                 "FOOTBALL BACKGROUND",
                 [
                     "France: U17 National / U19 National experience.",
-                    "United States: William Penn University college environment.",
-                    "Summer 2026: First State FC, The League for Clubs - Northeast Conference.",
+                    "United States: William Penn University and First State FC, The League for Clubs.",
+                    "Norway 2026: Nybergsund IL Trysil, 4. divisjon men - NFF Indre Ostland.",
                 ],
             ),
             (
                 "RECENT EVIDENCE",
                 [
+                    "Current club: Nybergsund IL Trysil. Under contract until 31 October 2026 and open to discussions now for the next project.",
                     "The League for Clubs - Northeast Conference Team of the Week, June 26 - July 2, 2026.",
-                    "Highlights 2026 for first screening.",
-                    "Latest full-match reference: June 20, 2026 - Rayan wears number 27.",
+                    "Highlights 2026 and full-match reference from June 20, 2026 - Rayan wears number 27.",
                 ],
             ),
         ],
         "links_title": "VIDEO AND PROFILE LINKS",
         "links": [
             ("Recruitment profile", "https://cc-2a.github.io/rayan-cappai-recruitment/"),
+            ("Official NFF player profile", "https://www.fotball.no/fotballdata/person/profil/?fiksId=4171102"),
             ("Highlights 2026", "https://www.youtube.com/watch?v=6p439LZkKp4"),
             ("Full match #27", "https://www.youtube.com/watch?v=4_4mTHcd5zQ"),
         ],
@@ -100,16 +101,16 @@ DATA = {
         "email_label": "Email",
         "phone_label": "Phone",
         "whatsapp_label": "WhatsApp",
-        "footer": "Based in France | Available for club trials and staff evaluation | Updated July 2026",
+        "footer": "Nybergsund IL Trysil, Norway | Contract until 31 October 2026 | Open to discussions | Updated August 2026",
     },
     "fr": {
         "filename": "Rayan_Cappai_CV_Sportif_FR.pdf",
         "subtitle": "Milieu central français 2006 | 6 / 8 / 10 | Droitier | 1,82 m / 77 kg",
         "intro": (
-            "Profil pour essai en club et évaluation par le staff. Parcours U17 Nationaux / U19 Nationaux en France, "
-            "expérience universitaire à William Penn University et compétition récente avec First State FC durant l'été 2026."
+            "Profil de recrutement et d'évaluation par le staff. Parcours U17 Nationaux / U19 Nationaux en France, "
+            "expérience aux États-Unis et compétition senior actuelle en Norvège avec Nybergsund IL Trysil."
         ),
-        "strip": ["U17 / U19 Nationaux", "William Penn University", "First State FC", "Match complet #27"],
+        "strip": ["U17 / U19 Nationaux", "William Penn University", "Nybergsund IL Trysil", "Match complet #27"],
         "facts": [
             ("POSTE", "Milieu central"),
             ("RÔLE", "6 / 8 / 10"),
@@ -117,8 +118,8 @@ DATA = {
             ("TAILLE / POIDS", "1,82 m / 77 kg"),
             ("NIVEAU JEUNES FRANCE", "U17 Nationaux / U19 Nationaux"),
             ("EXPÉRIENCE US", "William Penn University + First State FC"),
-            ("COMPÉTITION RÉCENTE", "First State FC - The League for Clubs, été 2026"),
-            ("SITUATION ACTUELLE", "Basé en France - Disponible pour essais / évaluation"),
+            ("CLUB ACTUEL", "Nybergsund IL Trysil - Norvège"),
+            ("CONTRAT / CONTACT", "Sous contrat jusqu'au 31 octobre 2026 - Contactable pour le prochain projet"),
         ],
         "sections": [
             (
@@ -133,22 +134,23 @@ DATA = {
                 "PARCOURS FOOTBALL",
                 [
                     "France : expérience U17 Nationaux / U19 Nationaux.",
-                    "États-Unis : environnement universitaire à William Penn University.",
-                    "Été 2026 : First State FC, The League for Clubs - Northeast Conference.",
+                    "États-Unis : William Penn University et First State FC, The League for Clubs.",
+                    "Norvège 2026 : Nybergsund IL Trysil, 4. divisjon menn - NFF Indre Østland.",
                 ],
             ),
             (
                 "ÉLÉMENTS RÉCENTS",
                 [
+                    "Club actuel : Nybergsund IL Trysil. Sous contrat jusqu'au 31 octobre 2026 et contactable dès maintenant pour la suite.",
                     "Équipe type de la Northeast Conference de The League for Clubs, du 26 juin au 2 juillet 2026.",
-                    "Highlights 2026 pour une première sélection.",
-                    "Dernier match complet de référence : 20 juin 2026 - Rayan porte le numéro 27.",
+                    "Highlights 2026 et match complet de référence du 20 juin 2026 - Rayan porte le numéro 27.",
                 ],
             ),
         ],
         "links_title": "LIENS VIDÉO ET PROFIL",
         "links": [
             ("Profil de recrutement", "https://cc-2a.github.io/rayan-cappai-recruitment/?lang=fr"),
+            ("Profil joueur officiel NFF", "https://www.fotball.no/fotballdata/person/profil/?fiksId=4171102"),
             ("Highlights 2026", "https://www.youtube.com/watch?v=6p439LZkKp4"),
             ("Match complet #27", "https://www.youtube.com/watch?v=4_4mTHcd5zQ"),
         ],
@@ -156,16 +158,16 @@ DATA = {
         "email_label": "E-mail",
         "phone_label": "Téléphone",
         "whatsapp_label": "WhatsApp",
-        "footer": "Basé en France | Disponible pour essais et évaluation staff | Mis à jour en juillet 2026",
+        "footer": "Nybergsund IL Trysil, Norvège | Contrat jusqu'au 31 octobre 2026 | Contactable | Mis à jour en août 2026",
     },
     "es": {
         "filename": "Rayan_Cappai_CV_Deportivo_ES.pdf",
         "subtitle": "Mediocampista central francés 2006 | 6 / 8 / 10 | Diestro | 1,82 m / 77 kg",
         "intro": (
-            "Perfil para prueba de club y evaluación del staff. Trayectoria U17 Nacional / U19 Nacional en Francia, "
-            "experiencia universitaria en William Penn University y competición reciente con First State FC durante el verano de 2026."
+            "Perfil de reclutamiento y evaluación del staff. Trayectoria U17 Nacional / U19 Nacional en Francia, "
+            "experiencia en Estados Unidos y competición sénior actual en Noruega con Nybergsund IL Trysil."
         ),
-        "strip": ["U17 / U19 Nacional", "William Penn University", "First State FC", "Partido completo #27"],
+        "strip": ["U17 / U19 Nacional", "William Penn University", "Nybergsund IL Trysil", "Partido completo #27"],
         "facts": [
             ("POSICIÓN", "Mediocampista central"),
             ("ROL", "6 / 8 / 10"),
@@ -173,8 +175,8 @@ DATA = {
             ("ALTURA / PESO", "1,82 m / 77 kg"),
             ("NIVEL JUVENIL FRANCIA", "U17 Nacional / U19 Nacional"),
             ("EXPERIENCIA EE. UU.", "William Penn University + First State FC"),
-            ("COMPETICIÓN RECIENTE", "First State FC - The League for Clubs, verano 2026"),
-            ("SITUACIÓN ACTUAL", "En Francia - Disponible para pruebas / evaluación"),
+            ("CLUB ACTUAL", "Nybergsund IL Trysil - Noruega"),
+            ("CONTRATO / CONTACTO", "Contrato hasta el 31 de octubre de 2026 - Contactable para el próximo proyecto"),
         ],
         "sections": [
             (
@@ -189,22 +191,23 @@ DATA = {
                 "TRAYECTORIA FUTBOLÍSTICA",
                 [
                     "Francia: experiencia U17 Nacional / U19 Nacional.",
-                    "Estados Unidos: entorno universitario en William Penn University.",
-                    "Verano 2026: First State FC, The League for Clubs - Northeast Conference.",
+                    "Estados Unidos: William Penn University y First State FC, The League for Clubs.",
+                    "Noruega 2026: Nybergsund IL Trysil, 4. divisjon menn - NFF Indre Østland.",
                 ],
             ),
             (
                 "EVIDENCIA RECIENTE",
                 [
+                    "Club actual: Nybergsund IL Trysil. Contrato hasta el 31 de octubre de 2026 y disponible desde ahora para conversar sobre el próximo proyecto.",
                     "Equipo de la semana de la Northeast Conference de The League for Clubs, 26 de junio - 2 de julio de 2026.",
-                    "Highlights 2026 para el primer filtro.",
-                    "Último partido completo de referencia: 20 de junio de 2026 - Rayan usa el número 27.",
+                    "Highlights 2026 y partido completo de referencia del 20 de junio de 2026 - Rayan usa el número 27.",
                 ],
             ),
         ],
         "links_title": "ENLACES DE VÍDEO Y PERFIL",
         "links": [
             ("Perfil de reclutamiento", "https://cc-2a.github.io/rayan-cappai-recruitment/?lang=es"),
+            ("Perfil oficial del jugador NFF", "https://www.fotball.no/fotballdata/person/profil/?fiksId=4171102"),
             ("Highlights 2026", "https://www.youtube.com/watch?v=6p439LZkKp4"),
             ("Partido completo #27", "https://www.youtube.com/watch?v=4_4mTHcd5zQ"),
         ],
@@ -212,7 +215,7 @@ DATA = {
         "email_label": "Correo",
         "phone_label": "Teléfono",
         "whatsapp_label": "WhatsApp",
-        "footer": "En Francia | Disponible para pruebas y evaluación del staff | Actualizado en julio de 2026",
+        "footer": "Nybergsund IL Trysil, Noruega | Contrato hasta el 31 de octubre de 2026 | Contactable | Actualizado en agosto de 2026",
     },
 }
 

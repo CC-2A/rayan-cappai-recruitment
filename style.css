@@ -993,6 +993,11 @@ h3 {
   color: var(--slate-600);
 }
 
+.career-timeline .text-action {
+  margin-top: 0.65rem;
+  font-size: 0.86rem;
+}
+
 .recognition-card {
   overflow: hidden;
   border: 1px solid var(--line-light);
