@@ -116,6 +116,7 @@ const translations = {
       step4Copy:
         "4. divisjon menn, NFF Indre Østland. Under contract until 31 October 2026.",
       nffSource: "View official NFF player profile",
+      currentPhotoLabel: "Current club · Norway 2026",
     },
     recognition: {
       eyebrow: "Verified recognition",
@@ -159,6 +160,8 @@ const translations = {
       fullMatch: "Rayan Cappai scanning the field during a match",
       recognition:
         "The League for Clubs Northeast Conference Team of the Week featuring Rayan Cappai",
+      currentClub:
+        "Rayan Cappai wearing the Nybergsund IL Trysil shirt on the club pitch",
       photo1: "Rayan Cappai controlling possession under pressure",
       photo2: "Rayan Cappai carrying the ball forward",
       photo3: "Rayan Cappai playing a forward pass",
@@ -274,6 +277,7 @@ const translations = {
       step4Copy:
         "4. divisjon menn, NFF Indre Østland. Sous contrat jusqu’au 31 octobre 2026.",
       nffSource: "Voir le profil officiel NFF",
+      currentPhotoLabel: "Club actuel · Norvège 2026",
     },
     recognition: {
       eyebrow: "Distinction vérifiée",
@@ -317,6 +321,8 @@ const translations = {
       fullMatch: "Rayan Cappai observe le jeu pendant un match",
       recognition:
         "Équipe type de la Northeast Conference de The League for Clubs avec Rayan Cappai",
+      currentClub:
+        "Rayan Cappai avec le maillot de Nybergsund IL Trysil sur le terrain du club",
       photo1: "Rayan Cappai contrôle le ballon sous pression",
       photo2: "Rayan Cappai progresse avec le ballon",
       photo3: "Rayan Cappai joue une passe vers l’avant",
@@ -432,6 +438,7 @@ const translations = {
       step4Copy:
         "4. divisjon menn, NFF Indre Østland. Contrato hasta el 31 de octubre de 2026.",
       nffSource: "Ver el perfil oficial de la NFF",
+      currentPhotoLabel: "Club actual · Noruega 2026",
     },
     recognition: {
       eyebrow: "Reconocimiento verificado",
@@ -476,6 +483,8 @@ const translations = {
       fullMatch: "Rayan Cappai observa el juego durante un partido",
       recognition:
         "Equipo de la semana de la Northeast Conference de The League for Clubs con Rayan Cappai",
+      currentClub:
+        "Rayan Cappai con la camiseta del Nybergsund IL Trysil en el campo del club",
       photo1: "Rayan Cappai controla la posesión bajo presión",
       photo2: "Rayan Cappai avanza con el balón",
       photo3: "Rayan Cappai juega un pase hacia delante",

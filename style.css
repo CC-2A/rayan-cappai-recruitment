@@ -998,6 +998,46 @@ h3 {
   font-size: 0.86rem;
 }
 
+.career-timeline .career-current {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(150px, 190px);
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.current-club-portrait {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line-light);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-light);
+}
+
+.current-club-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 34%;
+}
+
+.current-club-portrait figcaption {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.75rem 0.8rem 0.85rem;
+}
+
+.current-club-portrait figcaption span {
+  font-size: 0.62rem;
+}
+
+.current-club-portrait figcaption strong {
+  color: var(--ink);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
 .recognition-card {
   overflow: hidden;
   border: 1px solid var(--line-light);
@@ -1554,6 +1594,14 @@ h3 {
 
   .recognition-media {
     aspect-ratio: 4 / 4.25;
+  }
+
+  .career-timeline .career-current {
+    grid-template-columns: 1fr;
+  }
+
+  .current-club-portrait {
+    width: min(100%, 330px);
   }
 
   .photo-grid {

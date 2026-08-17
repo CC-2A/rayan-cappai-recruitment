@@ -31,6 +31,7 @@ The page is deliberately organized for a fast staff review:
 - `index.html`: semantic page structure, SEO and structured data.
 - `style.css`: responsive navy/gold design.
 - `app.js`: EN/FR/ES translations, navigation and profile-link copying.
+- `rayan-cappai-nybergsund-2026.webp`: current-club portrait at Nybergsund IL Trysil.
 - `Rayan_Cappai_Sport_CV_EN.pdf`: English Sport CV.
 - `Rayan_Cappai_CV_Sportif_FR.pdf`: French Sport CV.
 - `Rayan_Cappai_CV_Deportivo_ES.pdf`: Spanish Sport CV.
