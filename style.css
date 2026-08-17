@@ -1017,9 +1017,7 @@ h3 {
 .current-club-portrait img {
   display: block;
   width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  object-position: center 34%;
+  height: auto;
 }
 
 .current-club-portrait figcaption {
