@@ -38,7 +38,7 @@ const translations = {
       status: "Nybergsund IL Trysil · Contracted until 31 October 2026",
       eyebrow: "Official player recruitment profile",
       role: "2006 French Central Midfielder · 6 / 8 / 10",
-      lead: "French National youth background, U.S. college experience and current senior competition in Norway with Nybergsund IL Trysil. Open to discussions now for his next sporting project after the current contract.",
+      lead: "French National youth background, U.S. college experience and current senior competition in Norway with Nybergsund IL Trysil. Under contract until 31 October 2026, with discussions open for the 2027 season.",
       recentLabel: "Current club",
       recentValue: "Nybergsund IL Trysil · Norway 2026",
       recognitionLabel: "Verified recognition",
@@ -74,14 +74,15 @@ const translations = {
       card4Value: "4. divisjon menn · 2026",
       card5Label: "Recognition",
       card5Value: "Northeast Conference TOTW",
-      card6Label: "Current status",
-      card6Value: "Contracted to 31 Oct 2026 · Open to contact",
+      card6Label: "Contract status",
+      card6Value:
+        "Under contract until 31 October 2026 · Open to discussions for the 2027 season",
     },
     videos: {
       eyebrow: "Coach video review",
-      title: "Highlights first. Full match second.",
+      title: "Video selection and full match",
       intro:
-        "A simple review sequence: use the highlights for the first screening, then the full match to assess positioning, decisions, tempo and work rate.",
+        "A selection of actions provides a concise overview of his player profile. The full match supports a broader assessment of his positioning, decision-making, execution speed, and activity with and without the ball.",
       highlightsAria: "Watch Rayan Cappai 2026 highlights",
       firstScreening: "First screening",
       highlightsTitle: "Rayan Cappai · Highlights 2026",
@@ -125,10 +126,10 @@ const translations = {
       source: "View the source publication",
     },
     photos: {
-      eyebrow: "Recent action",
-      title: "Match context, not studio poses.",
+      eyebrow: "Competition photography",
+      title: "In match action",
       intro:
-        "Recent competitive images with First State FC during Summer 2026.",
+        "A selection of competitive images with First State FC during Summer 2026, before his move to Nybergsund IL Trysil.",
     },
     cv: {
       eyebrow: "Sport CV",
@@ -145,7 +146,7 @@ const translations = {
     contact: {
       eyebrow: "Direct contact",
       title: "Interested in evaluating Rayan?",
-      copy: "For enquiries about opportunities after his current contract, staff evaluation or supporting documents, contact Rayan directly. He is open to discussions now. Please include the club, level and proposed dates.",
+      copy: "For enquiries about opportunities after his current contract, staff evaluation or supporting documents, contact Rayan directly. Discussions regarding the 2027 season are currently open. Please include the club, level and proposed dates.",
       emailLabel: "Email",
       callLabel: "Call",
       copyLink: "Copy profile link",
@@ -198,7 +199,7 @@ const translations = {
       status: "Nybergsund IL Trysil · Sous contrat jusqu’au 31 octobre 2026",
       eyebrow: "Profil officiel de recrutement",
       role: "Milieu central français 2006 · 6 / 8 / 10",
-      lead: "Parcours en championnats nationaux jeunes français, expérience universitaire aux États-Unis et compétition senior actuelle en Norvège avec Nybergsund IL Trysil. Contactable dès maintenant pour étudier son prochain projet sportif après le contrat en cours.",
+      lead: "Parcours en championnats nationaux jeunes français, expérience universitaire aux États-Unis et compétition senior actuelle en Norvège avec Nybergsund IL Trysil. Sous contrat jusqu’au 31 octobre 2026, il étudie dès maintenant les opportunités pour la saison 2027.",
       recentLabel: "Club actuel",
       recentValue: "Nybergsund IL Trysil · Norvège 2026",
       recognitionLabel: "Distinction vérifiée",
@@ -234,14 +235,15 @@ const translations = {
       card4Value: "4. divisjon menn · 2026",
       card5Label: "Distinction",
       card5Value: "Équipe type · Northeast Conference",
-      card6Label: "Situation actuelle",
-      card6Value: "Sous contrat jusqu’au 31 oct. 2026 · Contactable",
+      card6Label: "Situation contractuelle",
+      card6Value:
+        "Sous contrat jusqu’au 31 octobre 2026 · Échanges ouverts pour la saison 2027",
     },
     videos: {
       eyebrow: "Évaluation vidéo",
-      title: "Highlights d’abord. Match complet ensuite.",
+      title: "Sélection vidéo et match intégral",
       intro:
-        "Une lecture simple : les highlights pour la première sélection, puis le match complet pour évaluer le positionnement, les décisions, le tempo et le volume de travail.",
+        "Une sélection d’actions permet d’identifier rapidement son profil. Le match intégral complète l’évaluation de son positionnement, de sa prise de décision, de son rythme d’exécution et de son activité avec et sans ballon.",
       highlightsAria: "Voir les highlights 2026 de Rayan Cappai",
       firstScreening: "Première sélection",
       highlightsTitle: "Rayan Cappai · Highlights 2026",
@@ -286,10 +288,10 @@ const translations = {
       source: "Voir la publication source",
     },
     photos: {
-      eyebrow: "Actions récentes",
-      title: "Des images de match, pas des poses.",
+      eyebrow: "Photos de compétition",
+      title: "En situation de match",
       intro:
-        "Photos récentes en compétition avec First State FC durant l’été 2026.",
+        "Sélection d’images prises en compétition avec First State FC durant l’été 2026, avant son arrivée à Nybergsund IL Trysil.",
     },
     cv: {
       eyebrow: "CV sportif",
@@ -306,7 +308,7 @@ const translations = {
     contact: {
       eyebrow: "Contact direct",
       title: "Vous souhaitez évaluer Rayan ?",
-      copy: "Pour un projet après son contrat actuel, une évaluation par le staff ou une demande de documents complémentaires, contactez directement Rayan. Il est joignable dès maintenant. Merci d’indiquer le club, le niveau et les dates proposées.",
+      copy: "Pour un projet après son contrat actuel, une évaluation par le staff ou une demande de documents complémentaires, contactez directement Rayan. Les échanges concernant la saison 2027 sont ouverts. Merci d’indiquer le club, le niveau et les dates proposées.",
       emailLabel: "E-mail",
       callLabel: "Appeler",
       copyLink: "Copier le lien du profil",
@@ -359,7 +361,7 @@ const translations = {
       status: "Nybergsund IL Trysil · Contrato hasta el 31 de octubre de 2026",
       eyebrow: "Perfil oficial de reclutamiento",
       role: "Mediocampista central francés 2006 · 6 / 8 / 10",
-      lead: "Trayectoria en competiciones nacionales juveniles francesas, experiencia universitaria en Estados Unidos y competición sénior actual en Noruega con Nybergsund IL Trysil. Disponible desde ahora para conversar sobre su próximo proyecto deportivo tras el contrato actual.",
+      lead: "Trayectoria en competiciones nacionales juveniles francesas, experiencia universitaria en Estados Unidos y competición sénior actual en Noruega con Nybergsund IL Trysil. Bajo contrato hasta el 31 de octubre de 2026, está abierto desde ahora a valorar oportunidades para la temporada 2027.",
       recentLabel: "Club actual",
       recentValue: "Nybergsund IL Trysil · Noruega 2026",
       recognitionLabel: "Reconocimiento verificado",
@@ -395,14 +397,15 @@ const translations = {
       card4Value: "4. divisjon menn · 2026",
       card5Label: "Reconocimiento",
       card5Value: "Equipo de la semana · Northeast Conference",
-      card6Label: "Situación actual",
-      card6Value: "Contrato hasta el 31 oct. 2026 · Contactable",
+      card6Label: "Situación contractual",
+      card6Value:
+        "Contrato hasta el 31 de octubre de 2026 · Abierto a conversaciones para la temporada 2027",
     },
     videos: {
       eyebrow: "Evaluación en vídeo",
-      title: "Highlights primero. Partido completo después.",
+      title: "Selección de vídeo y partido completo",
       intro:
-        "Una revisión sencilla: highlights para el primer filtro y el partido completo para evaluar posicionamiento, decisiones, ritmo y volumen de trabajo.",
+        "Una selección de acciones permite identificar rápidamente su perfil. El partido completo amplía la evaluación de su posicionamiento, toma de decisiones, velocidad de ejecución y actividad con y sin balón.",
       highlightsAria: "Ver los highlights 2026 de Rayan Cappai",
       firstScreening: "Primer filtro",
       highlightsTitle: "Rayan Cappai · Highlights 2026",
@@ -448,10 +451,10 @@ const translations = {
       source: "Ver la publicación original",
     },
     photos: {
-      eyebrow: "Acción reciente",
-      title: "Contexto de partido, no poses.",
+      eyebrow: "Fotografías de competición",
+      title: "En acción durante el partido",
       intro:
-        "Imágenes recientes de competición con First State FC durante el verano de 2026.",
+        "Selección de imágenes de competición con First State FC durante el verano de 2026, antes de su incorporación al Nybergsund IL Trysil.",
     },
     cv: {
       eyebrow: "CV deportivo",
@@ -468,7 +471,7 @@ const translations = {
     contact: {
       eyebrow: "Contacto directo",
       title: "¿Interesado en evaluar a Rayan?",
-      copy: "Para oportunidades posteriores a su contrato actual, una evaluación del staff o documentos adicionales, contacte directamente con Rayan. Está disponible desde ahora para conversar. Indique el club, nivel y fechas propuestas.",
+      copy: "Para oportunidades posteriores a su contrato actual, una evaluación del staff o documentos adicionales, contacte directamente con Rayan. Las conversaciones para la temporada 2027 están abiertas. Indique el club, nivel y fechas propuestas.",
       emailLabel: "Correo",
       callLabel: "Llamar",
       copyLink: "Copiar enlace del perfil",
