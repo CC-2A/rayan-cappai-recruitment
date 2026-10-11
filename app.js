@@ -2,9 +2,9 @@ const STORAGE_KEY = "rayan-cappai-language";
 const SUPPORTED_LANGUAGES = ["en", "fr", "es"];
 
 const CV_FILES = {
-  en: "./Rayan_Cappai_Sport_CV_EN.pdf",
-  fr: "./Rayan_Cappai_CV_Sportif_FR.pdf",
-  es: "./Rayan_Cappai_CV_Deportivo_ES.pdf",
+  en: "./Rayan_Cappai_Sport_CV_EN.pdf?v=20261011",
+  fr: "./Rayan_Cappai_CV_Sportif_FR.pdf?v=20261011",
+  es: "./Rayan_Cappai_CV_Deportivo_ES.pdf?v=20261011",
 };
 
 const translations = {
@@ -38,7 +38,7 @@ const translations = {
       status: "Nybergsund IL Trysil · Contracted until 31 October 2026",
       eyebrow: "Official player recruitment profile",
       role: "2006 French Central Midfielder · 6 / 8 / 10",
-      lead: "French National youth background, U.S. college experience and current senior competition in Norway with Nybergsund IL Trysil. Under contract until 31 October 2026, with discussions open for the 2027 season.",
+      lead: "Trained at AC Ajaccio for two seasons in U17 National and Gazélec Ajaccio for two seasons in U19 National, followed by U.S. college and club experience. At Nybergsund IL Trysil since 20 July 2026. Under contract until 31 October 2026, with discussions open for the 2027 season.",
       recentLabel: "Current club",
       recentValue: "Nybergsund IL Trysil · Norway 2026",
       recognitionLabel: "Verified recognition",
@@ -66,7 +66,7 @@ const translations = {
       intro:
         "Verified information for a fast first review. Detailed context and full-match evidence follow below.",
       card1Label: "French youth level",
-      card1Value: "U17 National · U19 National",
+      card1Value: "AC Ajaccio · U17 National / Gazélec Ajaccio · U19 National",
       card2Label: "U.S. college experience",
       card3Label: "Current club",
       card3Value: "Nybergsund IL Trysil · Norway",
@@ -77,6 +77,22 @@ const translations = {
       card6Label: "Contract status",
       card6Value:
         "Under contract until 31 October 2026 · Open to discussions for the 2027 season",
+    },
+    norway: {
+      eyebrow: "Norway · 2026 season",
+      title: "Nybergsund: current season record",
+      date: "As of 11 October 2026 · Joined 20 July 2026",
+      matchesLabel: "League appearances",
+      matchesValue: "11 / 11 since joining",
+      goalsLabel: "League goals",
+      goalsValue: "3 goals",
+      positionLabel: "Club league position",
+      positionValue: "3rd · 41 points",
+      returnLabel: "Second-half points ranking",
+      returnValue: "1st · 25 points",
+      note: "Second half: matchweeks 14–23, 8 wins, 1 draw and 1 defeat in 10 matches. Nybergsund: 25 points in 10 matches; HamKam 2: 22 points in 9. Ranking calculated from NFF results as of 11 October 2026; games played differ.",
+      playerSource: "NFF player statistics",
+      leagueSource: "NFF league table and results",
     },
     videos: {
       eyebrow: "Coach video review",
@@ -103,19 +119,22 @@ const translations = {
     career: {
       eyebrow: "Football background",
       title: "A clear pathway across France, the U.S. and Norway.",
-      step1Date: "France · Youth pathway",
-      step1Title: "U17 National · U19 National",
-      step1Copy: "Development in French National youth competition.",
+      step1Date: "France · U16 / U17 years",
+      step1Title: "AC Ajaccio · U17 National",
+      step1Copy: "Two seasons in U17 National during his U16 and U17 years.",
+      step1bDate: "France · U18 / U19 years",
+      step1bTitle: "Gazélec Ajaccio · U19 National",
+      step1bCopy: "Two seasons in U19 National during his U18 and U19 years.",
       step2Date: "United States · College experience",
       step2Copy: "Experience in a U.S. university football environment.",
       step3Date: "Summer 2026 · United States",
       step3Title: "First State FC",
       step3Copy:
         "The League for Clubs, Northeast Conference. Recent match footage available.",
-      step4Date: "2026 · Current club in Norway",
+      step4Date: "Since 20 July 2026 · Norway",
       step4Title: "Nybergsund IL Trysil",
       step4Copy:
-        "4. divisjon menn, NFF Indre Østland. Under contract until 31 October 2026.",
+        "4. divisjon menn, NFF Indre Østland. 11 league appearances and 3 goals as of 11 October 2026. Under contract until 31 October 2026.",
       nffSource: "View official NFF player profile",
       currentPhotoLabel: "Current club · Norway 2026",
     },
@@ -141,7 +160,7 @@ const translations = {
       check3: "Highlights, full match and direct contact",
       documentLabel: "Sport CV · 2026",
       primaryButton: "Download English CV",
-      updated: "Updated August 2026",
+      updated: "Updated 11 October 2026",
     },
     contact: {
       eyebrow: "Direct contact",
@@ -199,7 +218,7 @@ const translations = {
       status: "Nybergsund IL Trysil · Sous contrat jusqu’au 31 octobre 2026",
       eyebrow: "Profil officiel de recrutement",
       role: "Milieu central français 2006 · 6 / 8 / 10",
-      lead: "Parcours en championnats nationaux jeunes français, expérience universitaire aux États-Unis et compétition senior actuelle en Norvège avec Nybergsund IL Trysil. Sous contrat jusqu’au 31 octobre 2026, il étudie dès maintenant les opportunités pour la saison 2027.",
+      lead: "Formé à l’AC Ajaccio pendant deux saisons en U17 Nationaux, puis au Gazélec Ajaccio pendant deux saisons en U19 Nationaux, avant son expérience universitaire et en club aux États-Unis. À Nybergsund IL Trysil depuis le 20 juillet 2026. Sous contrat jusqu’au 31 octobre 2026, il étudie les opportunités pour la saison 2027.",
       recentLabel: "Club actuel",
       recentValue: "Nybergsund IL Trysil · Norvège 2026",
       recognitionLabel: "Distinction vérifiée",
@@ -227,7 +246,7 @@ const translations = {
       intro:
         "Informations vérifiées pour une première lecture rapide. Le contexte détaillé et le match complet sont disponibles ci-dessous.",
       card1Label: "Niveau jeunes France",
-      card1Value: "U17 Nationaux · U19 Nationaux",
+      card1Value: "AC Ajaccio · U17 Nationaux / Gazélec Ajaccio · U19 Nationaux",
       card2Label: "Expérience universitaire US",
       card3Label: "Club actuel",
       card3Value: "Nybergsund IL Trysil · Norvège",
@@ -238,6 +257,22 @@ const translations = {
       card6Label: "Situation contractuelle",
       card6Value:
         "Sous contrat jusqu’au 31 octobre 2026 · Échanges ouverts pour la saison 2027",
+    },
+    norway: {
+      eyebrow: "Norvège · Saison 2026",
+      title: "Nybergsund : le bilan actuel",
+      date: "Au 11 octobre 2026 · Arrivée le 20 juillet 2026",
+      matchesLabel: "Matchs de championnat",
+      matchesValue: "11 / 11 depuis son arrivée",
+      goalsLabel: "Buts en championnat",
+      goalsValue: "3 buts",
+      positionLabel: "Classement du club",
+      positionValue: "3e · 41 points",
+      returnLabel: "Classement aux points sur la phase retour",
+      returnValue: "1er · 25 points",
+      note: "Phase retour : journées 14 à 23, 8 victoires, 1 nul et 1 défaite en 10 matchs. Nybergsund : 25 points en 10 matchs ; HamKam 2 : 22 points en 9 matchs. Classement recalculé à partir des résultats NFF au 11 octobre 2026, avec des nombres de matchs différents.",
+      playerSource: "Statistiques du joueur sur la NFF",
+      leagueSource: "Classement et résultats sur la NFF",
     },
     videos: {
       eyebrow: "Évaluation vidéo",
@@ -264,20 +299,23 @@ const translations = {
     career: {
       eyebrow: "Parcours football",
       title: "Un parcours clair entre la France, les États-Unis et la Norvège.",
-      step1Date: "France · Formation jeunes",
-      step1Title: "U17 Nationaux · U19 Nationaux",
+      step1Date: "France · Années U16 / U17",
+      step1Title: "AC Ajaccio · U17 Nationaux",
       step1Copy:
-        "Développement dans les championnats nationaux jeunes français.",
+        "Deux saisons en U17 Nationaux durant ses années U16 et U17.",
+      step1bDate: "France · Années U18 / U19",
+      step1bTitle: "Gazélec Ajaccio · U19 Nationaux",
+      step1bCopy: "Deux saisons en U19 Nationaux durant ses années U18 et U19.",
       step2Date: "États-Unis · Expérience universitaire",
       step2Copy: "Expérience dans un environnement universitaire américain.",
       step3Date: "Été 2026 · États-Unis",
       step3Title: "First State FC",
       step3Copy:
         "The League for Clubs, Northeast Conference. Images récentes de match disponibles.",
-      step4Date: "2026 · Club actuel en Norvège",
+      step4Date: "Depuis le 20 juillet 2026 · Norvège",
       step4Title: "Nybergsund IL Trysil",
       step4Copy:
-        "4. divisjon menn, NFF Indre Østland. Sous contrat jusqu’au 31 octobre 2026.",
+        "4. divisjon menn, NFF Indre Østland. 11 matchs de championnat et 3 buts au 11 octobre 2026. Sous contrat jusqu’au 31 octobre 2026.",
       nffSource: "Voir le profil officiel NFF",
       currentPhotoLabel: "Club actuel · Norvège 2026",
     },
@@ -303,7 +341,7 @@ const translations = {
       check3: "Highlights, match complet et contact direct",
       documentLabel: "CV sportif · 2026",
       primaryButton: "Télécharger le CV français",
-      updated: "Mis à jour en août 2026",
+      updated: "Mis à jour le 11 octobre 2026",
     },
     contact: {
       eyebrow: "Contact direct",
@@ -361,7 +399,7 @@ const translations = {
       status: "Nybergsund IL Trysil · Contrato hasta el 31 de octubre de 2026",
       eyebrow: "Perfil oficial de reclutamiento",
       role: "Mediocampista central francés 2006 · 6 / 8 / 10",
-      lead: "Trayectoria en competiciones nacionales juveniles francesas, experiencia universitaria en Estados Unidos y competición sénior actual en Noruega con Nybergsund IL Trysil. Bajo contrato hasta el 31 de octubre de 2026, está abierto desde ahora a valorar oportunidades para la temporada 2027.",
+      lead: "Formado en el AC Ajaccio durante dos temporadas en U17 Nacional y en el Gazélec Ajaccio durante dos temporadas en U19 Nacional, antes de su experiencia universitaria y de club en Estados Unidos. En el Nybergsund IL Trysil desde el 20 de julio de 2026. Contrato hasta el 31 de octubre de 2026 y abierto a oportunidades para la temporada 2027.",
       recentLabel: "Club actual",
       recentValue: "Nybergsund IL Trysil · Noruega 2026",
       recognitionLabel: "Reconocimiento verificado",
@@ -389,7 +427,7 @@ const translations = {
       intro:
         "Información verificada para una primera revisión rápida. El contexto detallado y el partido completo aparecen a continuación.",
       card1Label: "Nivel juvenil en Francia",
-      card1Value: "U17 Nacional · U19 Nacional",
+      card1Value: "AC Ajaccio · U17 Nacional / Gazélec Ajaccio · U19 Nacional",
       card2Label: "Experiencia universitaria en EE. UU.",
       card3Label: "Club actual",
       card3Value: "Nybergsund IL Trysil · Noruega",
@@ -400,6 +438,22 @@ const translations = {
       card6Label: "Situación contractual",
       card6Value:
         "Contrato hasta el 31 de octubre de 2026 · Abierto a conversaciones para la temporada 2027",
+    },
+    norway: {
+      eyebrow: "Noruega · Temporada 2026",
+      title: "Nybergsund: balance actual",
+      date: "A 11 de octubre de 2026 · Llegada el 20 de julio de 2026",
+      matchesLabel: "Partidos de liga",
+      matchesValue: "11 / 11 desde su llegada",
+      goalsLabel: "Goles en liga",
+      goalsValue: "3 goles",
+      positionLabel: "Posición del club",
+      positionValue: "3.º · 41 puntos",
+      returnLabel: "Clasificación por puntos en la segunda vuelta",
+      returnValue: "1.º · 25 puntos",
+      note: "Segunda vuelta: jornadas 14–23, 8 victorias, 1 empate y 1 derrota en 10 partidos. Nybergsund: 25 puntos en 10 partidos; HamKam 2: 22 puntos en 9. Clasificación calculada a partir de los resultados de la NFF a 11 de octubre de 2026, con distinto número de partidos disputados.",
+      playerSource: "Estadísticas del jugador en la NFF",
+      leagueSource: "Clasificación y resultados en la NFF",
     },
     videos: {
       eyebrow: "Evaluación en vídeo",
@@ -426,9 +480,12 @@ const translations = {
     career: {
       eyebrow: "Trayectoria futbolística",
       title: "Un recorrido claro entre Francia, EE. UU. y Noruega.",
-      step1Date: "Francia · Formación juvenil",
-      step1Title: "U17 Nacional · U19 Nacional",
-      step1Copy: "Desarrollo en competiciones nacionales juveniles francesas.",
+      step1Date: "Francia · Etapas U16 / U17",
+      step1Title: "AC Ajaccio · U17 Nacional",
+      step1Copy: "Dos temporadas en U17 Nacional durante sus etapas U16 y U17.",
+      step1bDate: "Francia · Etapas U18 / U19",
+      step1bTitle: "Gazélec Ajaccio · U19 Nacional",
+      step1bCopy: "Dos temporadas en U19 Nacional durante sus etapas U18 y U19.",
       step2Date: "Estados Unidos · Experiencia universitaria",
       step2Copy:
         "Experiencia en un entorno de fútbol universitario estadounidense.",
@@ -436,10 +493,10 @@ const translations = {
       step3Title: "First State FC",
       step3Copy:
         "The League for Clubs, Northeast Conference. Vídeo reciente de partido disponible.",
-      step4Date: "2026 · Club actual en Noruega",
+      step4Date: "Desde el 20 de julio de 2026 · Noruega",
       step4Title: "Nybergsund IL Trysil",
       step4Copy:
-        "4. divisjon menn, NFF Indre Østland. Contrato hasta el 31 de octubre de 2026.",
+        "4. divisjon menn, NFF Indre Østland. 11 partidos de liga y 3 goles a 11 de octubre de 2026. Contrato hasta el 31 de octubre de 2026.",
       nffSource: "Ver el perfil oficial de la NFF",
       currentPhotoLabel: "Club actual · Noruega 2026",
     },
@@ -466,7 +523,7 @@ const translations = {
       check3: "Highlights, partido completo y contacto directo",
       documentLabel: "CV deportivo · 2026",
       primaryButton: "Descargar CV en español",
-      updated: "Actualizado en agosto de 2026",
+      updated: "Actualizado el 11 de octubre de 2026",
     },
     contact: {
       eyebrow: "Contacto directo",

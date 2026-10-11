@@ -1715,3 +1715,11 @@ h3 {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Dated Norway season record */
+.norway-section { padding-top: 1rem; }
+.norway-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+.norway-note { max-width: 980px; margin: 1.5rem 0 1rem; color: var(--slate-600); font-size: .9rem; line-height: 1.6; }
+.norway-sources { display: flex; flex-wrap: wrap; gap: 1rem 2rem; }
+@media (max-width: 1100px) { .norway-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .norway-grid { grid-template-columns: 1fr; } }

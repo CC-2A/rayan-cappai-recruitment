@@ -62,7 +62,7 @@ DATA = {
             ("FRENCH YOUTH LEVEL", "U17 National / U19 National"),
             ("U.S. EXPERIENCE", "William Penn University + First State FC"),
             ("CURRENT CLUB", "Nybergsund IL Trysil - Norway"),
-            ("CONTRACT / CONTACT", "Under contract until 31 October 2026 - Open to discussions for next project"),
+            ("CONTRACT / CONTACT", "Until 31 October 2026 - Discussions open for the 2027 season"),
         ],
         "sections": [
             (
@@ -76,15 +76,17 @@ DATA = {
             (
                 "FOOTBALL BACKGROUND",
                 [
-                    "France: U17 National / U19 National experience.",
+                    "AC Ajaccio: two seasons in U17 National (U16/U17 years).",
+                    "Gazélec Ajaccio: two seasons in U19 National (U18/U19 years).",
                     "United States: William Penn University and First State FC, The League for Clubs.",
-                    "Norway 2026: Nybergsund IL Trysil, 4. divisjon men - NFF Indre Ostland.",
+                    "Nybergsund IL Trysil since 20 July 2026: 4. divisjon menn - NFF Indre Østland.",
                 ],
             ),
             (
                 "RECENT EVIDENCE",
                 [
-                    "Current club: Nybergsund IL Trysil. Under contract until 31 October 2026 and open to discussions now for the next project.",
+                    "As of 11 October 2026: 11 league appearances out of 11 since joining, 3 goals. Club: 3rd, 41 points.",
+                    "Second-half points ranking (matchweeks 14-23): 1st, 25 points / 10 games; HamKam 2: 22 / 9. Calculated from NFF results.",
                     "The League for Clubs - Northeast Conference Team of the Week, June 26 - July 2, 2026.",
                     "Highlights 2026 and full-match reference from June 20, 2026 - Rayan wears number 27.",
                 ],
@@ -94,6 +96,7 @@ DATA = {
         "links": [
             ("Recruitment profile", "https://cc-2a.github.io/rayan-cappai-recruitment/"),
             ("Official NFF player profile", "https://www.fotball.no/fotballdata/person/profil/?fiksId=4171102"),
+            ("NFF - 2026", "https://www.fotball.no/fotballdata/turnering/hjem/?fiksId=205625"),
             ("Highlights 2026", "https://www.youtube.com/watch?v=6p439LZkKp4"),
             ("Full match #27", "https://www.youtube.com/watch?v=4_4mTHcd5zQ"),
         ],
@@ -101,7 +104,7 @@ DATA = {
         "email_label": "Email",
         "phone_label": "Phone",
         "whatsapp_label": "WhatsApp",
-        "footer": "Nybergsund IL Trysil, Norway | Contract until 31 October 2026 | Open to discussions | Updated August 2026",
+        "footer": "Nybergsund IL Trysil, Norway | Contract until 31 October 2026 | Open to discussions | Updated 11 October 2026",
     },
     "fr": {
         "filename": "Rayan_Cappai_CV_Sportif_FR.pdf",
@@ -119,7 +122,7 @@ DATA = {
             ("NIVEAU JEUNES FRANCE", "U17 Nationaux / U19 Nationaux"),
             ("EXPÉRIENCE US", "William Penn University + First State FC"),
             ("CLUB ACTUEL", "Nybergsund IL Trysil - Norvège"),
-            ("CONTRAT / CONTACT", "Sous contrat jusqu'au 31 octobre 2026 - Contactable pour le prochain projet"),
+            ("CONTRAT / CONTACT", "Jusqu'au 31 octobre 2026 - Échanges ouverts pour la saison 2027"),
         ],
         "sections": [
             (
@@ -133,15 +136,17 @@ DATA = {
             (
                 "PARCOURS FOOTBALL",
                 [
-                    "France : expérience U17 Nationaux / U19 Nationaux.",
+                    "AC Ajaccio : deux saisons en U17 Nationaux (années U16/U17).",
+                    "Gazélec Ajaccio : deux saisons en U19 Nationaux (années U18/U19).",
                     "États-Unis : William Penn University et First State FC, The League for Clubs.",
-                    "Norvège 2026 : Nybergsund IL Trysil, 4. divisjon menn - NFF Indre Østland.",
+                    "Nybergsund IL Trysil depuis le 20 juillet 2026 : 4. divisjon menn - NFF Indre Østland.",
                 ],
             ),
             (
                 "ÉLÉMENTS RÉCENTS",
                 [
-                    "Club actuel : Nybergsund IL Trysil. Sous contrat jusqu'au 31 octobre 2026 et contactable dès maintenant pour la suite.",
+                    "Au 11 octobre 2026 : 11 matchs de championnat sur 11 depuis son arrivée, 3 buts. Club : 3e, 41 points.",
+                    "Phase retour (journées 14-23) : 1er aux points, 25 points / 10 matchs ; HamKam 2 : 22 / 9. Calcul NFF.",
                     "Équipe type de la Northeast Conference de The League for Clubs, du 26 juin au 2 juillet 2026.",
                     "Highlights 2026 et match complet de référence du 20 juin 2026 - Rayan porte le numéro 27.",
                 ],
@@ -151,6 +156,7 @@ DATA = {
         "links": [
             ("Profil de recrutement", "https://cc-2a.github.io/rayan-cappai-recruitment/?lang=fr"),
             ("Profil joueur officiel NFF", "https://www.fotball.no/fotballdata/person/profil/?fiksId=4171102"),
+            ("NFF - 2026", "https://www.fotball.no/fotballdata/turnering/hjem/?fiksId=205625"),
             ("Highlights 2026", "https://www.youtube.com/watch?v=6p439LZkKp4"),
             ("Match complet #27", "https://www.youtube.com/watch?v=4_4mTHcd5zQ"),
         ],
@@ -158,7 +164,7 @@ DATA = {
         "email_label": "E-mail",
         "phone_label": "Téléphone",
         "whatsapp_label": "WhatsApp",
-        "footer": "Nybergsund IL Trysil, Norvège | Contrat jusqu'au 31 octobre 2026 | Contactable | Mis à jour en août 2026",
+        "footer": "Nybergsund IL Trysil, Norvège | Contrat jusqu'au 31 octobre 2026 | Contactable | Mis à jour le 11 octobre 2026",
     },
     "es": {
         "filename": "Rayan_Cappai_CV_Deportivo_ES.pdf",
@@ -176,7 +182,7 @@ DATA = {
             ("NIVEL JUVENIL FRANCIA", "U17 Nacional / U19 Nacional"),
             ("EXPERIENCIA EE. UU.", "William Penn University + First State FC"),
             ("CLUB ACTUAL", "Nybergsund IL Trysil - Noruega"),
-            ("CONTRATO / CONTACTO", "Contrato hasta el 31 de octubre de 2026 - Contactable para el próximo proyecto"),
+            ("CONTRATO / CONTACTO", "Hasta el 31 de octubre de 2026 - Conversaciones abiertas para 2027"),
         ],
         "sections": [
             (
@@ -190,15 +196,17 @@ DATA = {
             (
                 "TRAYECTORIA FUTBOLÍSTICA",
                 [
-                    "Francia: experiencia U17 Nacional / U19 Nacional.",
+                    "AC Ajaccio: dos temporadas en U17 Nacional (etapas U16/U17).",
+                    "Gazélec Ajaccio: dos temporadas en U19 Nacional (etapas U18/U19).",
                     "Estados Unidos: William Penn University y First State FC, The League for Clubs.",
-                    "Noruega 2026: Nybergsund IL Trysil, 4. divisjon menn - NFF Indre Østland.",
+                    "Nybergsund IL Trysil desde el 20 de julio de 2026: 4. divisjon menn - NFF Indre Østland.",
                 ],
             ),
             (
                 "EVIDENCIA RECIENTE",
                 [
-                    "Club actual: Nybergsund IL Trysil. Contrato hasta el 31 de octubre de 2026 y disponible desde ahora para conversar sobre el próximo proyecto.",
+                    "A 11 de octubre de 2026: 11 partidos de liga de 11 desde su llegada, 3 goles. Club: 3.º, 41 puntos.",
+                    "Segunda vuelta (jornadas 14-23): 1.º por puntos, 25 / 10 partidos; HamKam 2: 22 / 9. Cálculo NFF.",
                     "Equipo de la semana de la Northeast Conference de The League for Clubs, 26 de junio - 2 de julio de 2026.",
                     "Highlights 2026 y partido completo de referencia del 20 de junio de 2026 - Rayan usa el número 27.",
                 ],
@@ -208,6 +216,7 @@ DATA = {
         "links": [
             ("Perfil de reclutamiento", "https://cc-2a.github.io/rayan-cappai-recruitment/?lang=es"),
             ("Perfil oficial del jugador NFF", "https://www.fotball.no/fotballdata/person/profil/?fiksId=4171102"),
+            ("NFF - 2026", "https://www.fotball.no/fotballdata/turnering/hjem/?fiksId=205625"),
             ("Highlights 2026", "https://www.youtube.com/watch?v=6p439LZkKp4"),
             ("Partido completo #27", "https://www.youtube.com/watch?v=4_4mTHcd5zQ"),
         ],
@@ -215,7 +224,7 @@ DATA = {
         "email_label": "Correo",
         "phone_label": "Teléfono",
         "whatsapp_label": "WhatsApp",
-        "footer": "Nybergsund IL Trysil, Noruega | Contrato hasta el 31 de octubre de 2026 | Contactable | Actualizado en agosto de 2026",
+        "footer": "Nybergsund IL Trysil, Noruega | Contrato hasta el 31 de octubre de 2026 | Contactable | Actualizado el 11 de octubre de 2026",
     },
 }
 

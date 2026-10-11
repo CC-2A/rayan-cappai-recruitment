@@ -57,3 +57,14 @@ python3 tools/generate_cvs.py
 ```
 
 All three PDFs must remain one-page A4 documents and must be visually rendered after any update.
+
+## Verified update - 11 October 2026
+
+- AC Ajaccio: two seasons in U17 National during U16/U17 years.
+- Gazélec Ajaccio: two seasons in U19 National during U18/U19 years.
+- Nybergsund arrival: 20 July 2026 (confirmed by the player’s family).
+- NFF league record: 11 appearances, 3 goals; team third with 41 points from 23 games.
+- Second-half ranking is a calculation from NFF results, matchweeks 14–23: Nybergsund 25 points / 10 games, HamKam 2 22 / 9. It is dated and games played are disclosed.
+- No claim that the club was 11th on 20 July: the reconstructed table gives fifth, 16 points.
+- Sources: NFF player profile above and https://www.fotball.no/fotballdata/turnering/hjem/?fiksId=205625
+- Website translations, PDF generator and legacy English PDF aliases updated together.
