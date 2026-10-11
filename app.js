@@ -2,17 +2,17 @@ const STORAGE_KEY = "rayan-cappai-language";
 const SUPPORTED_LANGUAGES = ["en", "fr", "es"];
 
 const CV_FILES = {
-  en: "./Rayan_Cappai_Sport_CV_EN.pdf?v=20261011",
-  fr: "./Rayan_Cappai_CV_Sportif_FR.pdf?v=20261011",
-  es: "./Rayan_Cappai_CV_Deportivo_ES.pdf?v=20261011",
+  en: "./Rayan_Cappai_Sport_CV_EN.pdf?v=20261011-position6",
+  fr: "./Rayan_Cappai_CV_Sportif_FR.pdf?v=20261011-position6",
+  es: "./Rayan_Cappai_CV_Deportivo_ES.pdf?v=20261011-position6",
 };
 
 const translations = {
   en: {
     meta: {
-      title: "Rayan Cappai | 2006 French Central Midfielder",
+      title: "Rayan Cappai | 2006 French Defensive Midfielder",
       description:
-        "Official recruitment profile for Rayan Cappai, a 2006 French central midfielder (6/8/10) currently playing in Norway with Nybergsund IL Trysil and under contract until 31 October 2026.",
+        "Official recruitment profile for Rayan Cappai, a 2006 French defensive midfielder (6) currently playing in Norway with Nybergsund IL Trysil and under contract until 31 October 2026.",
     },
     a11y: {
       skip: "Skip to main content",
@@ -26,7 +26,7 @@ const translations = {
       cvLanguages: "All Sport CV languages",
       quickActions: "Quick actions",
     },
-    brand: { role: "Central Midfielder" },
+    brand: { role: "Defensive Midfielder" },
     nav: {
       profile: "Profile",
       videos: "Videos",
@@ -37,7 +37,7 @@ const translations = {
     hero: {
       status: "Nybergsund IL Trysil · Contracted until 31 October 2026",
       eyebrow: "Official player recruitment profile",
-      role: "2006 French Central Midfielder · 6 / 8 / 10",
+      role: "2006 French Defensive Midfielder · 6 · Ball-winning / Playmaking",
       lead: "Trained at AC Ajaccio for two seasons in U17 National and Gazélec Ajaccio for two seasons in U19 National, followed by U.S. college and club experience. At Nybergsund IL Trysil since 20 July 2026. Under contract until 31 October 2026, with discussions open for the 2027 season.",
       recentLabel: "Current club",
       recentValue: "Nybergsund IL Trysil · Norway 2026",
@@ -48,7 +48,7 @@ const translations = {
     },
     facts: {
       positionLabel: "Position",
-      position: "6 / 8 / 10",
+      position: "6",
       footLabel: "Preferred foot",
       foot: "Right",
       heightLabel: "Height",
@@ -114,7 +114,7 @@ const translations = {
       review1: "Scanning & positioning",
       review2: "Tempo & decision-making",
       review3: "Defensive work rate",
-      review4: "Role flexibility · 6 / 8 / 10",
+      review4: "Ball-winning & playmaking · 6",
     },
     career: {
       eyebrow: "Football background",
@@ -156,7 +156,7 @@ const translations = {
       intro:
         "The Sport CV matches the information on this profile and includes direct links to both videos.",
       check1: "Current status and recent experience",
-      check2: "Player profile and role flexibility",
+      check2: "Player profile and current role",
       check3: "Highlights, full match and direct contact",
       documentLabel: "Sport CV · 2026",
       primaryButton: "Download English CV",
@@ -190,9 +190,9 @@ const translations = {
   },
   fr: {
     meta: {
-      title: "Rayan Cappai | Milieu central français 2006",
+      title: "Rayan Cappai | Milieu défensif français 2006",
       description:
-        "Profil officiel de recrutement de Rayan Cappai, milieu central français 2006 (6/8/10), actuellement joueur de Nybergsund IL Trysil en Norvège et sous contrat jusqu’au 31 octobre 2026.",
+        "Profil officiel de recrutement de Rayan Cappai, milieu défensif français 2006 (6), actuellement joueur de Nybergsund IL Trysil en Norvège et sous contrat jusqu’au 31 octobre 2026.",
     },
     a11y: {
       skip: "Aller au contenu principal",
@@ -206,7 +206,7 @@ const translations = {
       cvLanguages: "Toutes les langues du CV sportif",
       quickActions: "Actions rapides",
     },
-    brand: { role: "Milieu central" },
+    brand: { role: "Milieu défensif" },
     nav: {
       profile: "Profil",
       videos: "Vidéos",
@@ -217,7 +217,7 @@ const translations = {
     hero: {
       status: "Nybergsund IL Trysil · Sous contrat jusqu’au 31 octobre 2026",
       eyebrow: "Profil officiel de recrutement",
-      role: "Milieu central français 2006 · 6 / 8 / 10",
+      role: "Milieu défensif français 2006 · 6 · Récupérateur / Organisateur",
       lead: "Formé à l’AC Ajaccio pendant deux saisons en U17 Nationaux, puis au Gazélec Ajaccio pendant deux saisons en U19 Nationaux, avant son expérience universitaire et en club aux États-Unis. À Nybergsund IL Trysil depuis le 20 juillet 2026. Sous contrat jusqu’au 31 octobre 2026, il étudie les opportunités pour la saison 2027.",
       recentLabel: "Club actuel",
       recentValue: "Nybergsund IL Trysil · Norvège 2026",
@@ -227,8 +227,8 @@ const translations = {
       photoCaption: "Images récentes de match disponibles",
     },
     facts: {
-      positionLabel: "Postes",
-      position: "6 / 8 / 10",
+      positionLabel: "Poste",
+      position: "6",
       footLabel: "Pied fort",
       foot: "Droit",
       heightLabel: "Taille",
@@ -294,7 +294,7 @@ const translations = {
       review1: "Prise d’information & placement",
       review2: "Tempo & prise de décision",
       review3: "Volume de travail défensif",
-      review4: "Polyvalence de rôle · 6 / 8 / 10",
+      review4: "Récupération & organisation · 6",
     },
     career: {
       eyebrow: "Parcours football",
@@ -337,7 +337,7 @@ const translations = {
       intro:
         "Le CV sportif reprend les mêmes informations que ce profil et contient les liens directs vers les deux vidéos.",
       check1: "Situation actuelle et expérience récente",
-      check2: "Profil joueur et polyvalence de rôle",
+      check2: "Profil joueur et poste actuel",
       check3: "Highlights, match complet et contact direct",
       documentLabel: "CV sportif · 2026",
       primaryButton: "Télécharger le CV français",
@@ -371,9 +371,9 @@ const translations = {
   },
   es: {
     meta: {
-      title: "Rayan Cappai | Mediocampista central francés 2006",
+      title: "Rayan Cappai | Mediocentro defensivo francés 2006",
       description:
-        "Perfil oficial de reclutamiento de Rayan Cappai, mediocampista central francés 2006 (6/8/10), actualmente jugador del Nybergsund IL Trysil en Noruega y con contrato hasta el 31 de octubre de 2026.",
+        "Perfil oficial de reclutamiento de Rayan Cappai, mediocentro defensivo francés 2006 (6), actualmente jugador del Nybergsund IL Trysil en Noruega y con contrato hasta el 31 de octubre de 2026.",
     },
     a11y: {
       skip: "Saltar al contenido principal",
@@ -387,7 +387,7 @@ const translations = {
       cvLanguages: "Todos los idiomas del CV deportivo",
       quickActions: "Acciones rápidas",
     },
-    brand: { role: "Mediocampista central" },
+    brand: { role: "Mediocentro defensivo" },
     nav: {
       profile: "Perfil",
       videos: "Vídeos",
@@ -398,7 +398,7 @@ const translations = {
     hero: {
       status: "Nybergsund IL Trysil · Contrato hasta el 31 de octubre de 2026",
       eyebrow: "Perfil oficial de reclutamiento",
-      role: "Mediocampista central francés 2006 · 6 / 8 / 10",
+      role: "Mediocentro defensivo francés 2006 · 6 · Recuperador / Organizador",
       lead: "Formado en el AC Ajaccio durante dos temporadas en U17 Nacional y en el Gazélec Ajaccio durante dos temporadas en U19 Nacional, antes de su experiencia universitaria y de club en Estados Unidos. En el Nybergsund IL Trysil desde el 20 de julio de 2026. Contrato hasta el 31 de octubre de 2026 y abierto a oportunidades para la temporada 2027.",
       recentLabel: "Club actual",
       recentValue: "Nybergsund IL Trysil · Noruega 2026",
@@ -408,8 +408,8 @@ const translations = {
       photoCaption: "Vídeo reciente de partido disponible",
     },
     facts: {
-      positionLabel: "Posiciones",
-      position: "6 / 8 / 10",
+      positionLabel: "Posición",
+      position: "6",
       footLabel: "Pie dominante",
       foot: "Derecho",
       heightLabel: "Altura",
@@ -475,7 +475,7 @@ const translations = {
       review1: "Lectura previa & posicionamiento",
       review2: "Ritmo & toma de decisiones",
       review3: "Trabajo defensivo",
-      review4: "Flexibilidad de rol · 6 / 8 / 10",
+      review4: "Recuperación & organización · 6",
     },
     career: {
       eyebrow: "Trayectoria futbolística",
@@ -519,7 +519,7 @@ const translations = {
       intro:
         "El CV deportivo coincide con la información de este perfil e incluye enlaces directos a los dos vídeos.",
       check1: "Situación actual y experiencia reciente",
-      check2: "Perfil de jugador y flexibilidad de rol",
+      check2: "Perfil de jugador y posición actual",
       check3: "Highlights, partido completo y contacto directo",
       documentLabel: "CV deportivo · 2026",
       primaryButton: "Descargar CV en español",

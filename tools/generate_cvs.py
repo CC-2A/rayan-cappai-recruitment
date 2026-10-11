@@ -48,15 +48,15 @@ pdfmetrics.registerFont(TTFont("CVBold", FONT_BOLD))
 DATA = {
     "en": {
         "filename": "Rayan_Cappai_Sport_CV_EN.pdf",
-        "subtitle": "2006 French Central Midfielder | 6 / 8 / 10 | Right-footed | 1.82 m / 77 kg",
+        "subtitle": "2006 French Defensive Midfielder | 6 | Right-footed | 1.82 m / 77 kg",
         "intro": (
             "Club recruitment and staff evaluation profile. French U17 National / U19 National background, "
             "U.S. experience and current senior competition in Norway with Nybergsund IL Trysil."
         ),
         "strip": ["U17 / U19 National", "William Penn University", "Nybergsund IL Trysil", "Full Match #27"],
         "facts": [
-            ("POSITION", "Central Midfielder"),
-            ("ROLE", "6 / 8 / 10"),
+            ("POSITION", "Defensive Midfielder"),
+            ("ROLE", "6"),
             ("FOOT", "Right-footed"),
             ("HEIGHT / WEIGHT", "1.82 m / 77 kg"),
             ("FRENCH YOUTH LEVEL", "U17 National / U19 National"),
@@ -68,8 +68,8 @@ DATA = {
             (
                 "PLAYER PROFILE",
                 [
-                    "Central midfielder able to organize deeper, connect phases and receive between lines.",
-                    "Role flexibility across positions 6, 8 and 10.",
+                    "Defensive midfielder with a ball-winning and playmaking profile.",
+                    "Currently playing as a number 6 at Nybergsund IL Trysil.",
                     "Full-match footage available to assess scanning, positioning, tempo, defensive work and decisions under pressure.",
                 ],
             ),
@@ -108,15 +108,15 @@ DATA = {
     },
     "fr": {
         "filename": "Rayan_Cappai_CV_Sportif_FR.pdf",
-        "subtitle": "Milieu central français 2006 | 6 / 8 / 10 | Droitier | 1,82 m / 77 kg",
+        "subtitle": "Milieu défensif français 2006 | 6 | Droitier | 1,82 m / 77 kg",
         "intro": (
             "Profil de recrutement et d'évaluation par le staff. Parcours U17 Nationaux / U19 Nationaux en France, "
             "expérience aux États-Unis et compétition senior actuelle en Norvège avec Nybergsund IL Trysil."
         ),
         "strip": ["U17 / U19 Nationaux", "William Penn University", "Nybergsund IL Trysil", "Match complet #27"],
         "facts": [
-            ("POSTE", "Milieu central"),
-            ("RÔLE", "6 / 8 / 10"),
+            ("POSTE", "Milieu défensif"),
+            ("RÔLE", "6"),
             ("PIED", "Droitier"),
             ("TAILLE / POIDS", "1,82 m / 77 kg"),
             ("NIVEAU JEUNES FRANCE", "U17 Nationaux / U19 Nationaux"),
@@ -128,8 +128,8 @@ DATA = {
             (
                 "PROFIL JOUEUR",
                 [
-                    "Milieu central capable d'organiser plus bas, de relier les phases et de recevoir entre les lignes.",
-                    "Polyvalence de rôle sur les postes 6, 8 et 10.",
+                    "Milieu défensif au profil récupérateur et organisateur.",
+                    "Actuellement utilisé au poste de numéro 6 à Nybergsund IL Trysil.",
                     "Match complet disponible pour évaluer prise d'information, placement, tempo, travail défensif et décisions sous pression.",
                 ],
             ),
@@ -168,15 +168,15 @@ DATA = {
     },
     "es": {
         "filename": "Rayan_Cappai_CV_Deportivo_ES.pdf",
-        "subtitle": "Mediocampista central francés 2006 | 6 / 8 / 10 | Diestro | 1,82 m / 77 kg",
+        "subtitle": "Mediocentro defensivo francés 2006 | 6 | Diestro | 1,82 m / 77 kg",
         "intro": (
             "Perfil de reclutamiento y evaluación del staff. Trayectoria U17 Nacional / U19 Nacional en Francia, "
             "experiencia en Estados Unidos y competición sénior actual en Noruega con Nybergsund IL Trysil."
         ),
         "strip": ["U17 / U19 Nacional", "William Penn University", "Nybergsund IL Trysil", "Partido completo #27"],
         "facts": [
-            ("POSICIÓN", "Mediocampista central"),
-            ("ROL", "6 / 8 / 10"),
+            ("POSICIÓN", "Mediocentro defensivo"),
+            ("ROL", "6"),
             ("PIE", "Diestro"),
             ("ALTURA / PESO", "1,82 m / 77 kg"),
             ("NIVEL JUVENIL FRANCIA", "U17 Nacional / U19 Nacional"),
@@ -188,8 +188,8 @@ DATA = {
             (
                 "PERFIL DE JUGADOR",
                 [
-                    "Mediocampista central capaz de organizar desde atrás, conectar fases y recibir entre líneas.",
-                    "Flexibilidad de rol en las posiciones 6, 8 y 10.",
+                    "Mediocentro defensivo con perfil recuperador y organizador.",
+                    "Actualmente juega como número 6 en el Nybergsund IL Trysil.",
                     "Partido completo disponible para evaluar lectura, posicionamiento, ritmo, trabajo defensivo y decisiones bajo presión.",
                 ],
             ),
