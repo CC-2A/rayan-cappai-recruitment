@@ -2,9 +2,9 @@ const STORAGE_KEY = "rayan-cappai-language";
 const SUPPORTED_LANGUAGES = ["en", "fr", "es"];
 
 const CV_FILES = {
-  en: "./Rayan_Cappai_Sport_CV_EN.pdf?v=20261101-season2027",
-  fr: "./Rayan_Cappai_CV_Sportif_FR.pdf?v=20261101-season2027",
-  es: "./Rayan_Cappai_CV_Deportivo_ES.pdf?v=20261101-season2027",
+  en: "./Rayan_Cappai_Sport_CV_EN.pdf?v=20261101-blue2027",
+  fr: "./Rayan_Cappai_CV_Sportif_FR.pdf?v=20261101-blue2027",
+  es: "./Rayan_Cappai_CV_Deportivo_ES.pdf?v=20261101-blue2027",
 };
 
 const translations = {
@@ -35,16 +35,17 @@ const translations = {
       contact: "Contact",
     },
     hero: {
+      specialty: "Ball-winning · Playmaking",
       status: "Nybergsund IL Trysil · Signed for the 2027 season",
-      eyebrow: "Official player recruitment profile",
-      role: "2006 French Defensive Midfielder · 6 · Ball-winning / Playmaking",
-      lead: "Trained at AC Ajaccio for two seasons in U17 National and Gazélec Ajaccio for two seasons in U19 National, followed by U.S. college and club experience. At Nybergsund IL Trysil since 20 July 2026. Signed with Nybergsund IL Trysil for the 2027 season.",
+      eyebrow: "Player profile",
+      role: "French Defensive Midfielder · 6",
+      lead: "French youth development at AC Ajaccio and Gazélec Ajaccio, followed by experience in the United States and Norway. At Nybergsund IL Trysil since July 2026, signed for the 2027 season.",
       recentLabel: "Current club",
       recentValue: "Nybergsund IL Trysil · 2027",
       recognitionLabel: "Verified recognition",
       recognitionValue: "Conference Team of the Week",
-      photoKicker: "First State FC · Summer 2026",
-      photoCaption: "Recent match footage available",
+      photoKicker: "Nybergsund IL Trysil",
+      photoCaption: "Signed for the 2027 season",
     },
     facts: {
       positionLabel: "Position",
@@ -55,14 +56,14 @@ const translations = {
       weightLabel: "Weight",
     },
     actions: {
-      highlights: "Watch Highlights 2026",
+      highlights: "Watch video",
       highlightsShort: "Highlights",
       fullMatch: "Full Match · #27",
-      cv: "Download Sport CV",
+      cv: "Download CV",
     },
     profile: {
       eyebrow: "Recruiter snapshot",
-      title: "The essentials, immediately.",
+      title: "Player profile",
       intro:
         "Verified information for a fast first review. Detailed context and full-match evidence follow below.",
       card1Label: "French youth level",
@@ -70,7 +71,7 @@ const translations = {
       card2Label: "U.S. college experience",
       card3Label: "Current club",
       card3Value: "Nybergsund IL Trysil · Norway",
-      card4Label: "Current competition",
+      card4Label: "2026 competition",
       card4Value: "4. divisjon menn · 2026",
       card5Label: "Recognition",
       card5Value: "Northeast Conference TOTW",
@@ -80,7 +81,7 @@ const translations = {
     },
     norway: {
       eyebrow: "Norway · 2026 season",
-      title: "Nybergsund: current season record",
+      title: "Nybergsund · 2026 season",
       date: "As of 11 October 2026 · Joined 20 July 2026",
       matchesLabel: "League appearances",
       matchesValue: "11 / 11 since joining",
@@ -175,7 +176,7 @@ const translations = {
     },
     footer: { copy: "Official recruitment profile", top: "Back to top" },
     images: {
-      hero: "Rayan Cappai striking a forward pass for First State FC",
+      hero: "Rayan Cappai · Nybergsund IL Trysil · Season 2027",
       highlights: "Rayan Cappai carrying the ball forward",
       fullMatch: "Rayan Cappai scanning the field during a match",
       recognition:
@@ -192,7 +193,7 @@ const translations = {
     meta: {
       title: "Rayan Cappai | Milieu défensif français 2006",
       description:
-        "Profil officiel de recrutement de Rayan Cappai, milieu défensif français 2006 (6), actuellement joueur de Nybergsund IL Trysil en Norvège et engagé avec le club pour la saison 2027.",
+        "Profil du joueur de Rayan Cappai, milieu défensif français 2006 (6), actuellement joueur de Nybergsund IL Trysil en Norvège et engagé avec le club pour la saison 2027.",
     },
     a11y: {
       skip: "Aller au contenu principal",
@@ -215,16 +216,17 @@ const translations = {
       contact: "Contact",
     },
     hero: {
+      specialty: "Récupérateur · Organisateur",
       status: "Nybergsund IL Trysil · Signé pour la saison 2027",
-      eyebrow: "Profil officiel de recrutement",
-      role: "Milieu défensif français 2006 · 6 · Récupérateur / Organisateur",
-      lead: "Formé à l’AC Ajaccio pendant deux saisons en U17 Nationaux, puis au Gazélec Ajaccio pendant deux saisons en U19 Nationaux, avant son expérience universitaire et en club aux États-Unis. À Nybergsund IL Trysil depuis le 20 juillet 2026. Il a signé avec Nybergsund IL Trysil pour la saison 2027.",
+      eyebrow: "Profil du joueur",
+      role: "Milieu défensif français · 6",
+      lead: "Formé à l’AC Ajaccio et au Gazélec Ajaccio, puis passé par les États-Unis et la Norvège. À Nybergsund IL Trysil depuis juillet 2026, engagé pour la saison 2027.",
       recentLabel: "Club actuel",
       recentValue: "Nybergsund IL Trysil · 2027",
       recognitionLabel: "Distinction vérifiée",
       recognitionValue: "Équipe type de la conférence",
-      photoKicker: "First State FC · Été 2026",
-      photoCaption: "Images récentes de match disponibles",
+      photoKicker: "Nybergsund IL Trysil",
+      photoCaption: "Signé pour la saison 2027",
     },
     facts: {
       positionLabel: "Poste",
@@ -235,14 +237,14 @@ const translations = {
       weightLabel: "Poids",
     },
     actions: {
-      highlights: "Voir les highlights 2026",
+      highlights: "Voir la vidéo",
       highlightsShort: "Highlights",
       fullMatch: "Match complet · #27",
-      cv: "Télécharger le CV sportif",
+      cv: "Télécharger le CV",
     },
     profile: {
       eyebrow: "Aperçu recruteur",
-      title: "L’essentiel, immédiatement.",
+      title: "Profil du joueur",
       intro:
         "Informations vérifiées pour une première lecture rapide. Le contexte détaillé et le match complet sont disponibles ci-dessous.",
       card1Label: "Niveau jeunes France",
@@ -250,7 +252,7 @@ const translations = {
       card2Label: "Expérience universitaire US",
       card3Label: "Club actuel",
       card3Value: "Nybergsund IL Trysil · Norvège",
-      card4Label: "Compétition actuelle",
+      card4Label: "Compétition 2026",
       card4Value: "4. divisjon menn · 2026",
       card5Label: "Distinction",
       card5Value: "Équipe type · Northeast Conference",
@@ -260,7 +262,7 @@ const translations = {
     },
     norway: {
       eyebrow: "Norvège · Saison 2026",
-      title: "Nybergsund : le bilan actuel",
+      title: "Nybergsund · Saison 2026",
       date: "Au 11 octobre 2026 · Arrivée le 20 juillet 2026",
       matchesLabel: "Matchs de championnat",
       matchesValue: "11 / 11 depuis son arrivée",
@@ -279,7 +281,7 @@ const translations = {
       title: "Sélection vidéo et match intégral",
       intro:
         "Une sélection d’actions permet d’identifier rapidement son profil. Le match intégral complète l’évaluation de son positionnement, de sa prise de décision, de son rythme d’exécution et de son activité avec et sans ballon.",
-      highlightsAria: "Voir les highlights 2026 de Rayan Cappai",
+      highlightsAria: "Voir la vidéo de Rayan Cappai",
       firstScreening: "Première sélection",
       highlightsTitle: "Rayan Cappai · Highlights 2026",
       highlightsCopy:
@@ -354,9 +356,9 @@ const translations = {
       copyError:
         "Copie automatique impossible. Copiez l’adresse depuis votre navigateur.",
     },
-    footer: { copy: "Profil officiel de recrutement", top: "Retour en haut" },
+    footer: { copy: "Profil du joueur", top: "Retour en haut" },
     images: {
-      hero: "Rayan Cappai joue une passe vers l’avant avec First State FC",
+      hero: "Rayan Cappai · Nybergsund IL Trysil · Saison 2027",
       highlights: "Rayan Cappai progresse avec le ballon",
       fullMatch: "Rayan Cappai observe le jeu pendant un match",
       recognition:
@@ -373,7 +375,7 @@ const translations = {
     meta: {
       title: "Rayan Cappai | Mediocentro defensivo francés 2006",
       description:
-        "Perfil oficial de reclutamiento de Rayan Cappai, mediocentro defensivo francés 2006 (6), actualmente jugador del Nybergsund IL Trysil en Noruega y con contrato para la temporada 2027.",
+        "Perfil del jugador de Rayan Cappai, mediocentro defensivo francés 2006 (6), actualmente jugador del Nybergsund IL Trysil en Noruega y con contrato para la temporada 2027.",
     },
     a11y: {
       skip: "Saltar al contenido principal",
@@ -396,16 +398,17 @@ const translations = {
       contact: "Contacto",
     },
     hero: {
+      specialty: "Recuperador · Organizador",
       status: "Nybergsund IL Trysil · Contrato para la temporada 2027",
-      eyebrow: "Perfil oficial de reclutamiento",
-      role: "Mediocentro defensivo francés 2006 · 6 · Recuperador / Organizador",
-      lead: "Formado en el AC Ajaccio durante dos temporadas en U17 Nacional y en el Gazélec Ajaccio durante dos temporadas en U19 Nacional, antes de su experiencia universitaria y de club en Estados Unidos. En el Nybergsund IL Trysil desde el 20 de julio de 2026. Ha firmado con el Nybergsund IL Trysil para la temporada 2027.",
+      eyebrow: "Perfil del jugador",
+      role: "Mediocentro defensivo francés · 6",
+      lead: "Formado en el AC Ajaccio y el Gazélec Ajaccio, con experiencia posterior en Estados Unidos y Noruega. En el Nybergsund IL Trysil desde julio de 2026, con contrato para la temporada 2027.",
       recentLabel: "Club actual",
       recentValue: "Nybergsund IL Trysil · 2027",
       recognitionLabel: "Reconocimiento verificado",
       recognitionValue: "Equipo de la semana de la conferencia",
-      photoKicker: "First State FC · Verano 2026",
-      photoCaption: "Vídeo reciente de partido disponible",
+      photoKicker: "Nybergsund IL Trysil",
+      photoCaption: "Contrato para la temporada 2027",
     },
     facts: {
       positionLabel: "Posición",
@@ -416,14 +419,14 @@ const translations = {
       weightLabel: "Peso",
     },
     actions: {
-      highlights: "Ver highlights 2026",
+      highlights: "Ver vídeo",
       highlightsShort: "Highlights",
       fullMatch: "Partido completo · #27",
-      cv: "Descargar CV deportivo",
+      cv: "Descargar CV",
     },
     profile: {
       eyebrow: "Resumen para scouts",
-      title: "Lo esencial, de inmediato.",
+      title: "Perfil del jugador",
       intro:
         "Información verificada para una primera revisión rápida. El contexto detallado y el partido completo aparecen a continuación.",
       card1Label: "Nivel juvenil en Francia",
@@ -431,7 +434,7 @@ const translations = {
       card2Label: "Experiencia universitaria en EE. UU.",
       card3Label: "Club actual",
       card3Value: "Nybergsund IL Trysil · Noruega",
-      card4Label: "Competición actual",
+      card4Label: "Competición 2026",
       card4Value: "4. divisjon menn · 2026",
       card5Label: "Reconocimiento",
       card5Value: "Equipo de la semana · Northeast Conference",
@@ -441,7 +444,7 @@ const translations = {
     },
     norway: {
       eyebrow: "Noruega · Temporada 2026",
-      title: "Nybergsund: balance actual",
+      title: "Nybergsund · Temporada 2026",
       date: "A 11 de octubre de 2026 · Llegada el 20 de julio de 2026",
       matchesLabel: "Partidos de liga",
       matchesValue: "11 / 11 desde su llegada",
@@ -536,9 +539,9 @@ const translations = {
       copyError:
         "No se pudo copiar automáticamente. Copie la dirección desde el navegador.",
     },
-    footer: { copy: "Perfil oficial de reclutamiento", top: "Volver arriba" },
+    footer: { copy: "Perfil del jugador", top: "Volver arriba" },
     images: {
-      hero: "Rayan Cappai juega un pase hacia delante con First State FC",
+      hero: "Rayan Cappai · Nybergsund IL Trysil · Temporada 2027",
       highlights: "Rayan Cappai avanza con el balón",
       fullMatch: "Rayan Cappai observa el juego durante un partido",
       recognition:
@@ -709,3 +712,4 @@ document
   .querySelector("[data-copy-link]")
   ?.addEventListener("click", copyProfileLink);
 document.querySelector("[data-year]").textContent = new Date().getFullYear();
+
