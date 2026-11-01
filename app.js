@@ -2,9 +2,9 @@ const STORAGE_KEY = "rayan-cappai-language";
 const SUPPORTED_LANGUAGES = ["en", "fr", "es"];
 
 const CV_FILES = {
-  en: "./Rayan_Cappai_Sport_CV_EN.pdf?v=20261011-position6",
-  fr: "./Rayan_Cappai_CV_Sportif_FR.pdf?v=20261011-position6",
-  es: "./Rayan_Cappai_CV_Deportivo_ES.pdf?v=20261011-position6",
+  en: "./Rayan_Cappai_Sport_CV_EN.pdf?v=20261101-season2027",
+  fr: "./Rayan_Cappai_CV_Sportif_FR.pdf?v=20261101-season2027",
+  es: "./Rayan_Cappai_CV_Deportivo_ES.pdf?v=20261101-season2027",
 };
 
 const translations = {
@@ -12,7 +12,7 @@ const translations = {
     meta: {
       title: "Rayan Cappai | 2006 French Defensive Midfielder",
       description:
-        "Official recruitment profile for Rayan Cappai, a 2006 French defensive midfielder (6) currently playing in Norway with Nybergsund IL Trysil and under contract until 31 October 2026.",
+        "Official recruitment profile for Rayan Cappai, a 2006 French defensive midfielder (6) currently playing in Norway with Nybergsund IL Trysil and signed with the club for the 2027 season.",
     },
     a11y: {
       skip: "Skip to main content",
@@ -35,12 +35,12 @@ const translations = {
       contact: "Contact",
     },
     hero: {
-      status: "Nybergsund IL Trysil · Contracted until 31 October 2026",
+      status: "Nybergsund IL Trysil · Signed for the 2027 season",
       eyebrow: "Official player recruitment profile",
       role: "2006 French Defensive Midfielder · 6 · Ball-winning / Playmaking",
-      lead: "Trained at AC Ajaccio for two seasons in U17 National and Gazélec Ajaccio for two seasons in U19 National, followed by U.S. college and club experience. At Nybergsund IL Trysil since 20 July 2026. Under contract until 31 October 2026, with discussions open for the 2027 season.",
+      lead: "Trained at AC Ajaccio for two seasons in U17 National and Gazélec Ajaccio for two seasons in U19 National, followed by U.S. college and club experience. At Nybergsund IL Trysil since 20 July 2026. Signed with Nybergsund IL Trysil for the 2027 season.",
       recentLabel: "Current club",
-      recentValue: "Nybergsund IL Trysil · Norway 2026",
+      recentValue: "Nybergsund IL Trysil · 2027",
       recognitionLabel: "Verified recognition",
       recognitionValue: "Conference Team of the Week",
       photoKicker: "First State FC · Summer 2026",
@@ -76,7 +76,7 @@ const translations = {
       card5Value: "Northeast Conference TOTW",
       card6Label: "Contract status",
       card6Value:
-        "Under contract until 31 October 2026 · Open to discussions for the 2027 season",
+        "Signed with Nybergsund IL Trysil for the 2027 season",
     },
     norway: {
       eyebrow: "Norway · 2026 season",
@@ -134,9 +134,9 @@ const translations = {
       step4Date: "Since 20 July 2026 · Norway",
       step4Title: "Nybergsund IL Trysil",
       step4Copy:
-        "4. divisjon menn, NFF Indre Østland. 11 league appearances and 3 goals as of 11 October 2026. Under contract until 31 October 2026.",
+        "4. divisjon menn, NFF Indre Østland. 11 league appearances and 3 goals as of 11 October 2026. Signed with the club for the 2027 season.",
       nffSource: "View official NFF player profile",
-      currentPhotoLabel: "Current club · Norway 2026",
+      currentPhotoLabel: "Signed for the 2027 season",
     },
     recognition: {
       eyebrow: "Verified recognition",
@@ -160,12 +160,12 @@ const translations = {
       check3: "Highlights, full match and direct contact",
       documentLabel: "Sport CV · 2026",
       primaryButton: "Download English CV",
-      updated: "Updated 11 October 2026",
+      updated: "Updated 1 November 2026",
     },
     contact: {
       eyebrow: "Direct contact",
       title: "Interested in evaluating Rayan?",
-      copy: "For enquiries about opportunities after his current contract, staff evaluation or supporting documents, contact Rayan directly. Discussions regarding the 2027 season are currently open. Please include the club, level and proposed dates.",
+      copy: "Rayan has signed with Nybergsund IL Trysil for the 2027 season. For staff enquiries or supporting documents, contact him directly.",
       emailLabel: "Email",
       callLabel: "Call",
       copyLink: "Copy profile link",
@@ -181,7 +181,7 @@ const translations = {
       recognition:
         "The League for Clubs Northeast Conference Team of the Week featuring Rayan Cappai",
       currentClub:
-        "Rayan Cappai wearing the Nybergsund IL Trysil shirt on the club pitch",
+        "Rayan Cappai · Nybergsund IL Trysil · Signed for the 2027 season",
       photo1: "Rayan Cappai controlling possession under pressure",
       photo2: "Rayan Cappai carrying the ball forward",
       photo3: "Rayan Cappai playing a forward pass",
@@ -192,7 +192,7 @@ const translations = {
     meta: {
       title: "Rayan Cappai | Milieu défensif français 2006",
       description:
-        "Profil officiel de recrutement de Rayan Cappai, milieu défensif français 2006 (6), actuellement joueur de Nybergsund IL Trysil en Norvège et sous contrat jusqu’au 31 octobre 2026.",
+        "Profil officiel de recrutement de Rayan Cappai, milieu défensif français 2006 (6), actuellement joueur de Nybergsund IL Trysil en Norvège et engagé avec le club pour la saison 2027.",
     },
     a11y: {
       skip: "Aller au contenu principal",
@@ -215,12 +215,12 @@ const translations = {
       contact: "Contact",
     },
     hero: {
-      status: "Nybergsund IL Trysil · Sous contrat jusqu’au 31 octobre 2026",
+      status: "Nybergsund IL Trysil · Signé pour la saison 2027",
       eyebrow: "Profil officiel de recrutement",
       role: "Milieu défensif français 2006 · 6 · Récupérateur / Organisateur",
-      lead: "Formé à l’AC Ajaccio pendant deux saisons en U17 Nationaux, puis au Gazélec Ajaccio pendant deux saisons en U19 Nationaux, avant son expérience universitaire et en club aux États-Unis. À Nybergsund IL Trysil depuis le 20 juillet 2026. Sous contrat jusqu’au 31 octobre 2026, il étudie les opportunités pour la saison 2027.",
+      lead: "Formé à l’AC Ajaccio pendant deux saisons en U17 Nationaux, puis au Gazélec Ajaccio pendant deux saisons en U19 Nationaux, avant son expérience universitaire et en club aux États-Unis. À Nybergsund IL Trysil depuis le 20 juillet 2026. Il a signé avec Nybergsund IL Trysil pour la saison 2027.",
       recentLabel: "Club actuel",
-      recentValue: "Nybergsund IL Trysil · Norvège 2026",
+      recentValue: "Nybergsund IL Trysil · 2027",
       recognitionLabel: "Distinction vérifiée",
       recognitionValue: "Équipe type de la conférence",
       photoKicker: "First State FC · Été 2026",
@@ -256,7 +256,7 @@ const translations = {
       card5Value: "Équipe type · Northeast Conference",
       card6Label: "Situation contractuelle",
       card6Value:
-        "Sous contrat jusqu’au 31 octobre 2026 · Échanges ouverts pour la saison 2027",
+        "Signé avec Nybergsund IL Trysil pour la saison 2027",
     },
     norway: {
       eyebrow: "Norvège · Saison 2026",
@@ -315,9 +315,9 @@ const translations = {
       step4Date: "Depuis le 20 juillet 2026 · Norvège",
       step4Title: "Nybergsund IL Trysil",
       step4Copy:
-        "4. divisjon menn, NFF Indre Østland. 11 matchs de championnat et 3 buts au 11 octobre 2026. Sous contrat jusqu’au 31 octobre 2026.",
+        "4. divisjon menn, NFF Indre Østland. 11 matchs de championnat et 3 buts au 11 octobre 2026. Signé pour la saison 2027.",
       nffSource: "Voir le profil officiel NFF",
-      currentPhotoLabel: "Club actuel · Norvège 2026",
+      currentPhotoLabel: "Signé pour la saison 2027",
     },
     recognition: {
       eyebrow: "Distinction vérifiée",
@@ -341,12 +341,12 @@ const translations = {
       check3: "Highlights, match complet et contact direct",
       documentLabel: "CV sportif · 2026",
       primaryButton: "Télécharger le CV français",
-      updated: "Mis à jour le 11 octobre 2026",
+      updated: "Mis à jour le 1er novembre 2026",
     },
     contact: {
       eyebrow: "Contact direct",
       title: "Vous souhaitez évaluer Rayan ?",
-      copy: "Pour un projet après son contrat actuel, une évaluation par le staff ou une demande de documents complémentaires, contactez directement Rayan. Les échanges concernant la saison 2027 sont ouverts. Merci d’indiquer le club, le niveau et les dates proposées.",
+      copy: "Rayan a signé avec Nybergsund IL Trysil pour la saison 2027. Pour une prise de contact par un staff ou une demande de documents complémentaires, contactez-le directement.",
       emailLabel: "E-mail",
       callLabel: "Appeler",
       copyLink: "Copier le lien du profil",
@@ -362,7 +362,7 @@ const translations = {
       recognition:
         "Équipe type de la Northeast Conference de The League for Clubs avec Rayan Cappai",
       currentClub:
-        "Rayan Cappai avec le maillot de Nybergsund IL Trysil sur le terrain du club",
+        "Rayan Cappai · Nybergsund IL Trysil · Signé pour la saison 2027",
       photo1: "Rayan Cappai contrôle le ballon sous pression",
       photo2: "Rayan Cappai progresse avec le ballon",
       photo3: "Rayan Cappai joue une passe vers l’avant",
@@ -373,7 +373,7 @@ const translations = {
     meta: {
       title: "Rayan Cappai | Mediocentro defensivo francés 2006",
       description:
-        "Perfil oficial de reclutamiento de Rayan Cappai, mediocentro defensivo francés 2006 (6), actualmente jugador del Nybergsund IL Trysil en Noruega y con contrato hasta el 31 de octubre de 2026.",
+        "Perfil oficial de reclutamiento de Rayan Cappai, mediocentro defensivo francés 2006 (6), actualmente jugador del Nybergsund IL Trysil en Noruega y con contrato para la temporada 2027.",
     },
     a11y: {
       skip: "Saltar al contenido principal",
@@ -396,12 +396,12 @@ const translations = {
       contact: "Contacto",
     },
     hero: {
-      status: "Nybergsund IL Trysil · Contrato hasta el 31 de octubre de 2026",
+      status: "Nybergsund IL Trysil · Contrato para la temporada 2027",
       eyebrow: "Perfil oficial de reclutamiento",
       role: "Mediocentro defensivo francés 2006 · 6 · Recuperador / Organizador",
-      lead: "Formado en el AC Ajaccio durante dos temporadas en U17 Nacional y en el Gazélec Ajaccio durante dos temporadas en U19 Nacional, antes de su experiencia universitaria y de club en Estados Unidos. En el Nybergsund IL Trysil desde el 20 de julio de 2026. Contrato hasta el 31 de octubre de 2026 y abierto a oportunidades para la temporada 2027.",
+      lead: "Formado en el AC Ajaccio durante dos temporadas en U17 Nacional y en el Gazélec Ajaccio durante dos temporadas en U19 Nacional, antes de su experiencia universitaria y de club en Estados Unidos. En el Nybergsund IL Trysil desde el 20 de julio de 2026. Ha firmado con el Nybergsund IL Trysil para la temporada 2027.",
       recentLabel: "Club actual",
-      recentValue: "Nybergsund IL Trysil · Noruega 2026",
+      recentValue: "Nybergsund IL Trysil · 2027",
       recognitionLabel: "Reconocimiento verificado",
       recognitionValue: "Equipo de la semana de la conferencia",
       photoKicker: "First State FC · Verano 2026",
@@ -437,7 +437,7 @@ const translations = {
       card5Value: "Equipo de la semana · Northeast Conference",
       card6Label: "Situación contractual",
       card6Value:
-        "Contrato hasta el 31 de octubre de 2026 · Abierto a conversaciones para la temporada 2027",
+        "Contrato con el Nybergsund IL Trysil para la temporada 2027",
     },
     norway: {
       eyebrow: "Noruega · Temporada 2026",
@@ -496,9 +496,9 @@ const translations = {
       step4Date: "Desde el 20 de julio de 2026 · Noruega",
       step4Title: "Nybergsund IL Trysil",
       step4Copy:
-        "4. divisjon menn, NFF Indre Østland. 11 partidos de liga y 3 goles a 11 de octubre de 2026. Contrato hasta el 31 de octubre de 2026.",
+        "4. divisjon menn, NFF Indre Østland. 11 partidos de liga y 3 goles a 11 de octubre de 2026. Contrato para la temporada 2027.",
       nffSource: "Ver el perfil oficial de la NFF",
-      currentPhotoLabel: "Club actual · Noruega 2026",
+      currentPhotoLabel: "Contrato para la temporada 2027",
     },
     recognition: {
       eyebrow: "Reconocimiento verificado",
@@ -523,12 +523,12 @@ const translations = {
       check3: "Highlights, partido completo y contacto directo",
       documentLabel: "CV deportivo · 2026",
       primaryButton: "Descargar CV en español",
-      updated: "Actualizado el 11 de octubre de 2026",
+      updated: "Actualizado el 1 de noviembre de 2026",
     },
     contact: {
       eyebrow: "Contacto directo",
       title: "¿Interesado en evaluar a Rayan?",
-      copy: "Para oportunidades posteriores a su contrato actual, una evaluación del staff o documentos adicionales, contacte directamente con Rayan. Las conversaciones para la temporada 2027 están abiertas. Indique el club, nivel y fechas propuestas.",
+      copy: "Rayan ha firmado con el Nybergsund IL Trysil para la temporada 2027. Para consultas del cuerpo técnico o documentos adicionales, contacte directamente con él.",
       emailLabel: "Correo",
       callLabel: "Llamar",
       copyLink: "Copiar enlace del perfil",
@@ -544,7 +544,7 @@ const translations = {
       recognition:
         "Equipo de la semana de la Northeast Conference de The League for Clubs con Rayan Cappai",
       currentClub:
-        "Rayan Cappai con la camiseta del Nybergsund IL Trysil en el campo del club",
+        "Rayan Cappai · Nybergsund IL Trysil · Contrato para la temporada 2027",
       photo1: "Rayan Cappai controla la posesión bajo presión",
       photo2: "Rayan Cappai avanza con el balón",
       photo3: "Rayan Cappai juega un pase hacia delante",
