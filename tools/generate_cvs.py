@@ -62,7 +62,7 @@ DATA = {
             ("FRENCH YOUTH LEVEL", "U17 National / U19 National"),
             ("U.S. EXPERIENCE", "William Penn University + First State FC"),
             ("CURRENT CLUB", "Nybergsund IL Trysil - Norway"),
-            ("CONTRACT / CONTACT", "Signed with Nybergsund IL Trysil for the 2027 season"),
+            ("CONTRACT / CONTACT", "Contract extended by one season with Nybergsund IL Trysil for 2027"),
         ],
         "sections": [
             (
@@ -104,7 +104,7 @@ DATA = {
         "email_label": "Email",
         "phone_label": "Phone",
         "whatsapp_label": "WhatsApp",
-        "footer": "Nybergsund IL Trysil, Norway | Signed for the 2027 season | Updated 1 November 2026",
+        "footer": "Nybergsund IL Trysil, Norway | One-season extension · 2027 | Updated 1 November 2026",
     },
     "fr": {
         "filename": "Rayan_Cappai_CV_Sportif_FR.pdf",
@@ -122,7 +122,7 @@ DATA = {
             ("NIVEAU JEUNES FRANCE", "U17 Nationaux / U19 Nationaux"),
             ("EXPÉRIENCE US", "William Penn University + First State FC"),
             ("CLUB ACTUEL", "Nybergsund IL Trysil - Norvège"),
-            ("CONTRAT / CONTACT", "Signé avec Nybergsund IL Trysil pour la saison 2027"),
+            ("CONTRAT / CONTACT", "Prolongation d’une saison à Nybergsund IL Trysil pour 2027"),
         ],
         "sections": [
             (
@@ -164,7 +164,7 @@ DATA = {
         "email_label": "E-mail",
         "phone_label": "Téléphone",
         "whatsapp_label": "WhatsApp",
-        "footer": "Nybergsund IL Trysil, Norvège | Signé pour la saison 2027 | Mis à jour le 1er novembre 2026",
+        "footer": "Nybergsund IL Trysil, Norvège | Prolongation d’une saison · 2027 | Mis à jour le 1er novembre 2026",
     },
     "es": {
         "filename": "Rayan_Cappai_CV_Deportivo_ES.pdf",
@@ -182,7 +182,7 @@ DATA = {
             ("NIVEL JUVENIL FRANCIA", "U17 Nacional / U19 Nacional"),
             ("EXPERIENCIA EE. UU.", "William Penn University + First State FC"),
             ("CLUB ACTUAL", "Nybergsund IL Trysil - Noruega"),
-            ("CONTRATO / CONTACTO", "Contrato con el Nybergsund IL Trysil para la temporada 2027"),
+            ("CONTRATO / CONTACTO", "Renovación por una temporada más con el Nybergsund IL Trysil para 2027"),
         ],
         "sections": [
             (
@@ -224,7 +224,7 @@ DATA = {
         "email_label": "Correo",
         "phone_label": "Teléfono",
         "whatsapp_label": "WhatsApp",
-        "footer": "Nybergsund IL Trysil, Noruega | Contrato para la temporada 2027 | Actualizado el 1 de noviembre de 2026",
+        "footer": "Nybergsund IL Trysil, Noruega | Renovación por una temporada más · 2027 | Actualizado el 1 de noviembre de 2026",
     },
 }
 

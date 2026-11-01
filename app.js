@@ -2,9 +2,9 @@ const STORAGE_KEY = "rayan-cappai-language";
 const SUPPORTED_LANGUAGES = ["en", "fr", "es"];
 
 const CV_FILES = {
-  en: "./Rayan_Cappai_Sport_CV_EN.pdf?v=20261101-blue2027",
-  fr: "./Rayan_Cappai_CV_Sportif_FR.pdf?v=20261101-blue2027",
-  es: "./Rayan_Cappai_CV_Deportivo_ES.pdf?v=20261101-blue2027",
+  en: "./Rayan_Cappai_Sport_CV_EN.pdf?v=20261101-extension2027",
+  fr: "./Rayan_Cappai_CV_Sportif_FR.pdf?v=20261101-extension2027",
+  es: "./Rayan_Cappai_CV_Deportivo_ES.pdf?v=20261101-extension2027",
 };
 
 const translations = {
@@ -12,7 +12,7 @@ const translations = {
     meta: {
       title: "Rayan Cappai | 2006 French Defensive Midfielder",
       description:
-        "Official recruitment profile for Rayan Cappai, a 2006 French defensive midfielder (6) currently playing in Norway with Nybergsund IL Trysil and signed with the club for the 2027 season.",
+        "Official recruitment profile for Rayan Cappai, a 2006 French defensive midfielder (6) currently playing in Norway with Nybergsund IL Trysil and with a one-season contract extension for 2027.",
     },
     a11y: {
       skip: "Skip to main content",
@@ -36,16 +36,16 @@ const translations = {
     },
     hero: {
       specialty: "Ball-winning · Playmaking",
-      status: "Nybergsund IL Trysil · Signed for the 2027 season",
+      status: "Nybergsund IL Trysil · One-season extension · 2027",
       eyebrow: "Player profile",
       role: "French Defensive Midfielder · 6",
-      lead: "French youth development at AC Ajaccio and Gazélec Ajaccio, followed by experience in the United States and Norway. At Nybergsund IL Trysil since July 2026, signed for the 2027 season.",
+      lead: "French youth development at AC Ajaccio and Gazélec Ajaccio, followed by experience in the United States and Norway. At Nybergsund IL Trysil since July 2026, with a one-season contract extension for 2027.",
       recentLabel: "Current club",
       recentValue: "Nybergsund IL Trysil · 2027",
       recognitionLabel: "Verified recognition",
       recognitionValue: "Conference Team of the Week",
       photoKicker: "Nybergsund IL Trysil",
-      photoCaption: "Signed for the 2027 season",
+      photoCaption: "One-season extension · 2027",
     },
     facts: {
       positionLabel: "Position",
@@ -77,7 +77,7 @@ const translations = {
       card5Value: "Northeast Conference TOTW",
       card6Label: "Contract status",
       card6Value:
-        "Signed with Nybergsund IL Trysil for the 2027 season",
+        "Contract extended by one season with Nybergsund IL Trysil for 2027",
     },
     norway: {
       eyebrow: "Norway · 2026 season",
@@ -135,9 +135,9 @@ const translations = {
       step4Date: "Since 20 July 2026 · Norway",
       step4Title: "Nybergsund IL Trysil",
       step4Copy:
-        "4. divisjon menn, NFF Indre Østland. 11 league appearances and 3 goals as of 11 October 2026. Signed with the club for the 2027 season.",
+        "4. divisjon menn, NFF Indre Østland. 11 league appearances and 3 goals as of 11 October 2026. Contract extended by one season for 2027.",
       nffSource: "View official NFF player profile",
-      currentPhotoLabel: "Signed for the 2027 season",
+      currentPhotoLabel: "One-season extension · 2027",
     },
     recognition: {
       eyebrow: "Verified recognition",
@@ -166,7 +166,7 @@ const translations = {
     contact: {
       eyebrow: "Direct contact",
       title: "Interested in evaluating Rayan?",
-      copy: "Rayan has signed with Nybergsund IL Trysil for the 2027 season. For staff enquiries or supporting documents, contact him directly.",
+      copy: "Rayan has extended his contract with Nybergsund IL Trysil by one season, for 2027. For staff enquiries or supporting documents, contact him directly.",
       emailLabel: "Email",
       callLabel: "Call",
       copyLink: "Copy profile link",
@@ -182,7 +182,7 @@ const translations = {
       recognition:
         "The League for Clubs Northeast Conference Team of the Week featuring Rayan Cappai",
       currentClub:
-        "Rayan Cappai · Nybergsund IL Trysil · Signed for the 2027 season",
+        "Rayan Cappai · Nybergsund IL Trysil · One-season extension · 2027",
       photo1: "Rayan Cappai controlling possession under pressure",
       photo2: "Rayan Cappai carrying the ball forward",
       photo3: "Rayan Cappai playing a forward pass",
@@ -193,7 +193,7 @@ const translations = {
     meta: {
       title: "Rayan Cappai | Milieu défensif français 2006",
       description:
-        "Profil du joueur de Rayan Cappai, milieu défensif français 2006 (6), actuellement joueur de Nybergsund IL Trysil en Norvège et engagé avec le club pour la saison 2027.",
+        "Profil du joueur de Rayan Cappai, milieu défensif français 2006 (6), actuellement joueur de Nybergsund IL Trysil en Norvège et dont le contrat a été prolongé d’une saison supplémentaire pour 2027.",
     },
     a11y: {
       skip: "Aller au contenu principal",
@@ -217,16 +217,16 @@ const translations = {
     },
     hero: {
       specialty: "Récupérateur · Organisateur",
-      status: "Nybergsund IL Trysil · Signé pour la saison 2027",
+      status: "Nybergsund IL Trysil · Prolongation d’une saison · 2027",
       eyebrow: "Profil du joueur",
       role: "Milieu défensif français · 6",
-      lead: "Formé à l’AC Ajaccio et au Gazélec Ajaccio, puis passé par les États-Unis et la Norvège. À Nybergsund IL Trysil depuis juillet 2026, engagé pour la saison 2027.",
+      lead: "Formé à l’AC Ajaccio et au Gazélec Ajaccio, puis passé par les États-Unis et la Norvège. À Nybergsund IL Trysil depuis juillet 2026, il a prolongé d’une saison supplémentaire pour 2027.",
       recentLabel: "Club actuel",
       recentValue: "Nybergsund IL Trysil · 2027",
       recognitionLabel: "Distinction vérifiée",
       recognitionValue: "Équipe type de la conférence",
       photoKicker: "Nybergsund IL Trysil",
-      photoCaption: "Signé pour la saison 2027",
+      photoCaption: "Prolongation d’une saison · 2027",
     },
     facts: {
       positionLabel: "Poste",
@@ -258,7 +258,7 @@ const translations = {
       card5Value: "Équipe type · Northeast Conference",
       card6Label: "Situation contractuelle",
       card6Value:
-        "Signé avec Nybergsund IL Trysil pour la saison 2027",
+        "Prolongation d’une saison à Nybergsund IL Trysil pour 2027",
     },
     norway: {
       eyebrow: "Norvège · Saison 2026",
@@ -317,9 +317,9 @@ const translations = {
       step4Date: "Depuis le 20 juillet 2026 · Norvège",
       step4Title: "Nybergsund IL Trysil",
       step4Copy:
-        "4. divisjon menn, NFF Indre Østland. 11 matchs de championnat et 3 buts au 11 octobre 2026. Signé pour la saison 2027.",
+        "4. divisjon menn, NFF Indre Østland. 11 matchs de championnat et 3 buts au 11 octobre 2026. Prolongation d’une saison · 2027.",
       nffSource: "Voir le profil officiel NFF",
-      currentPhotoLabel: "Signé pour la saison 2027",
+      currentPhotoLabel: "Prolongation d’une saison · 2027",
     },
     recognition: {
       eyebrow: "Distinction vérifiée",
@@ -348,7 +348,7 @@ const translations = {
     contact: {
       eyebrow: "Contact direct",
       title: "Vous souhaitez évaluer Rayan ?",
-      copy: "Rayan a signé avec Nybergsund IL Trysil pour la saison 2027. Pour une prise de contact par un staff ou une demande de documents complémentaires, contactez-le directement.",
+      copy: "Rayan a prolongé son contrat d’une saison supplémentaire à Nybergsund IL Trysil, pour 2027. Pour une prise de contact par un staff ou une demande de documents complémentaires, contactez-le directement.",
       emailLabel: "E-mail",
       callLabel: "Appeler",
       copyLink: "Copier le lien du profil",
@@ -364,7 +364,7 @@ const translations = {
       recognition:
         "Équipe type de la Northeast Conference de The League for Clubs avec Rayan Cappai",
       currentClub:
-        "Rayan Cappai · Nybergsund IL Trysil · Signé pour la saison 2027",
+        "Rayan Cappai · Nybergsund IL Trysil · Prolongation d’une saison · 2027",
       photo1: "Rayan Cappai contrôle le ballon sous pression",
       photo2: "Rayan Cappai progresse avec le ballon",
       photo3: "Rayan Cappai joue une passe vers l’avant",
@@ -375,7 +375,7 @@ const translations = {
     meta: {
       title: "Rayan Cappai | Mediocentro defensivo francés 2006",
       description:
-        "Perfil del jugador de Rayan Cappai, mediocentro defensivo francés 2006 (6), actualmente jugador del Nybergsund IL Trysil en Noruega y con contrato para la temporada 2027.",
+        "Perfil del jugador de Rayan Cappai, mediocentro defensivo francés 2006 (6), actualmente jugador del Nybergsund IL Trysil en Noruega y con una renovación por una temporada más para 2027.",
     },
     a11y: {
       skip: "Saltar al contenido principal",
@@ -399,16 +399,16 @@ const translations = {
     },
     hero: {
       specialty: "Recuperador · Organizador",
-      status: "Nybergsund IL Trysil · Contrato para la temporada 2027",
+      status: "Nybergsund IL Trysil · Renovación por una temporada más · 2027",
       eyebrow: "Perfil del jugador",
       role: "Mediocentro defensivo francés · 6",
-      lead: "Formado en el AC Ajaccio y el Gazélec Ajaccio, con experiencia posterior en Estados Unidos y Noruega. En el Nybergsund IL Trysil desde julio de 2026, con contrato para la temporada 2027.",
+      lead: "Formado en el AC Ajaccio y el Gazélec Ajaccio, con experiencia posterior en Estados Unidos y Noruega. En el Nybergsund IL Trysil desde julio de 2026, con una renovación por una temporada más para 2027.",
       recentLabel: "Club actual",
       recentValue: "Nybergsund IL Trysil · 2027",
       recognitionLabel: "Reconocimiento verificado",
       recognitionValue: "Equipo de la semana de la conferencia",
       photoKicker: "Nybergsund IL Trysil",
-      photoCaption: "Contrato para la temporada 2027",
+      photoCaption: "Renovación por una temporada más · 2027",
     },
     facts: {
       positionLabel: "Posición",
@@ -440,7 +440,7 @@ const translations = {
       card5Value: "Equipo de la semana · Northeast Conference",
       card6Label: "Situación contractual",
       card6Value:
-        "Contrato con el Nybergsund IL Trysil para la temporada 2027",
+        "Renovación por una temporada más con el Nybergsund IL Trysil para 2027",
     },
     norway: {
       eyebrow: "Noruega · Temporada 2026",
@@ -499,9 +499,9 @@ const translations = {
       step4Date: "Desde el 20 de julio de 2026 · Noruega",
       step4Title: "Nybergsund IL Trysil",
       step4Copy:
-        "4. divisjon menn, NFF Indre Østland. 11 partidos de liga y 3 goles a 11 de octubre de 2026. Contrato para la temporada 2027.",
+        "4. divisjon menn, NFF Indre Østland. 11 partidos de liga y 3 goles a 11 de octubre de 2026. Renovación por una temporada más · 2027.",
       nffSource: "Ver el perfil oficial de la NFF",
-      currentPhotoLabel: "Contrato para la temporada 2027",
+      currentPhotoLabel: "Renovación por una temporada más · 2027",
     },
     recognition: {
       eyebrow: "Reconocimiento verificado",
@@ -531,7 +531,7 @@ const translations = {
     contact: {
       eyebrow: "Contacto directo",
       title: "¿Interesado en evaluar a Rayan?",
-      copy: "Rayan ha firmado con el Nybergsund IL Trysil para la temporada 2027. Para consultas del cuerpo técnico o documentos adicionales, contacte directamente con él.",
+      copy: "Rayan ha renovado su contrato con el Nybergsund IL Trysil por una temporada más, para 2027. Para consultas del cuerpo técnico o documentos adicionales, contacte directamente con él.",
       emailLabel: "Correo",
       callLabel: "Llamar",
       copyLink: "Copiar enlace del perfil",
@@ -547,7 +547,7 @@ const translations = {
       recognition:
         "Equipo de la semana de la Northeast Conference de The League for Clubs con Rayan Cappai",
       currentClub:
-        "Rayan Cappai · Nybergsund IL Trysil · Contrato para la temporada 2027",
+        "Rayan Cappai · Nybergsund IL Trysil · Renovación por una temporada más · 2027",
       photo1: "Rayan Cappai controla la posesión bajo presión",
       photo2: "Rayan Cappai avanza con el balón",
       photo3: "Rayan Cappai juega un pase hacia delante",
@@ -712,4 +712,3 @@ document
   .querySelector("[data-copy-link]")
   ?.addEventListener("click", copyProfileLink);
 document.querySelector("[data-year]").textContent = new Date().getFullYear();
-
