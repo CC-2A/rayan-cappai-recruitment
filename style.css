@@ -1750,3 +1750,21 @@ h3 {
  .hero-photo { max-width: 380px; }
  .hero-proof { margin-bottom: 0; }
 }
+
+/* Nybergsund portrait behind the opening section. */
+.hero {
+ background:
+  linear-gradient(90deg, rgba(6,24,45,.88) 0%, rgba(6,24,45,.66) 42%, rgba(6,24,45,.32) 65%, rgba(6,24,45,.72) 100%),
+  url('./rayan-cappai-nybergsund-2026.webp') center 35% / cover no-repeat,
+  var(--navy-950);
+}
+.hero::before { display: none; }
+.hero-orb { display: none; }
+@media (max-width: 980px) {
+ .hero {
+  background:
+   linear-gradient(180deg, rgba(6,24,45,.58) 0%, rgba(6,24,45,.76) 470px, var(--navy-950) 850px),
+   url('./rayan-cappai-nybergsund-2026.webp') center top / auto 850px no-repeat,
+   var(--navy-950);
+ }
+}
